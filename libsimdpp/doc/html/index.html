@@ -42,10 +42,32 @@
 <div class="title">libsimdpp Documentation</div>  </div>
 </div><!--header-->
 <div class="contents">
-</div><!-- contents -->
+<div class="textblock"><p>The libsimdpp library supports multiple instruction sets (architectures) from the same codebase. The instruction set is selected by defining one or more preprocessor macros before including the simd.h file.</p>
+<p>The following instruction sets are supported:</p>
+<p>(null): The instructions are not vectorized and use standard C++. This instruction set is used if no SIMD instruction set is selected.</p>
+<p>x86 SSE2: The x86/x86_64 SSE and SSE2 instruction sets are used. Macro: <code>SIMDPP_ARCH_X86_SSE2</code>.</p>
+<p>x86 SSE3: The x86/x86_64 SSE3 instruction set is used. The SSE and SSE2 instruction set support is required implicitly (no need to define the macros for these instruction sets).</p>
+<p>Macro: <code>SIMDPP_ARCH_X86_SSE3</code>.</p>
+<p>x86 SSSE3: The x86/x86_64 SSSE3 instruction set is used. The SSE, SSE2 and SSE3 instruction set support is required implicitly (no need to define the macros for these instruction sets).</p>
+<p>Macro: <code>SIMDPP_ARCH_X86_SSSE3</code>.</p>
+<p>x86 SSE4.1: The x86/x86_64 SSE4.1 instruction set is used. The SSE, SSE2 and SSE3 instruction set support is required implicitly (no need to define the macros for these instruction sets).</p>
+<p>Macro: <code>SIMDPP_ARCH_X86_SSE4_1</code>.</p>
+<p>x86 AVX: The x86/x86_64 AVX instruction set is used. The SSE, SSE2, SSE3 and SSSE3 instruction set support is required implicitly (no need to define the macros for these instruction sets).</p>
+<p>Macro: <code>SIMDPP_ARCH_X86_AVX</code>.</p>
+<p>x86 AVX2: The x86/x86_64 AVX2 instruction set is used. The SSE, SSE2, SSE3, SSSE3 and AVX instruction set support is required implicitly (no need to define the macros for these instruction sets).</p>
+<p>Macro: <code>SIMDPP_ARCH_X86_AVX2</code>.</p>
+<p>x86 FMA: The x86/x86_64 FMA instruction set is used.</p>
+<p>Macro: <code>SIMDPP_ARCH_X86_FMA</code> </p>
+<p>NEON: The ARM NEON instruction set. The VFP co-processor is used for any floating-point functionality (NEON does not require the implementation to be IEEE-754 compliant, whereas VFP does).</p>
+<p>Macro <code>SIMDPP_ARCH_ARM_NEON</code> </p>
+<p>NEON_FLT_SP: Performs 32-bit floating-point computations on the NEON co-processor. The NEON instruction set support is required implicitly (no need to define the macro for that instruction set).</p>
+<p>Macro <code>SIMDPP_ARCH_ARM_NEON_FLT_SP</code>.</p>
+<p>The same source code can be used to compile for any combination of different instruction sets. Moreover, several versions of the same functions can be included into the resulting binary and use a binary dispatch mechanism to select the best version.</p>
+<p>Since the C++ standard does not allow different definitions of the same function name to reside in the same binary, all functionality is put into a namespace, name of which is unique for each instruction set combination. This method can be used in user-defined code &ndash; the library supplies the name of the namespace as <em>SIMDPP_ARCH_NAMESPACE</em>. </p>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 15 2013 19:30:37 for libsimdpp by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 15 2013 21:06:33 for libsimdpp by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>
