@@ -1,16 +1,18 @@
+<!-- HTML header for doxygen 1.8.3.1-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>libsimdpp: simdpp::null Namespace Reference</title>
+<title>libsimdpp: Dispatching support</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+<div id="main">
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
@@ -32,252 +34,186 @@
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li class="current"><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
     </ul>
   </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li><a href="namespaces.html"><span>Namespace&#160;List</span></a></li>
-      <li><a href="namespacemembers.html"><span>Namespace&#160;Members</span></a></li>
-    </ul>
-  </div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="a00111.html">simdpp</a></li><li class="navelem"><a class="el" href="a00118.html">null</a></li>  </ul>
-</div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">simdpp::null Namespace Reference</div>  </div>
+<div class="title">Dispatching support</div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00001.html">simdpp::ArchUserInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identifies user supplied information about supported instruction sets.  <a href="a00001.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga0394bb6dc964709e5b9bb5458ecfc7b7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html#ga0394bb6dc964709e5b9bb5458ecfc7b7">SIMDPP_USER_ARCH_INFO</a>&#160;&#160;&#160;::simdpp::detail::default_user_get_arch_info</td></tr>
+<tr class="memdesc:ga0394bb6dc964709e5b9bb5458ecfc7b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIMDPP_USER_ARCH_INFO User-definable macro that specifies user-defined way to get supported instruction sets of the current processor.  <a href="#ga0394bb6dc964709e5b9bb5458ecfc7b7">More...</a><br/></td></tr>
+<tr class="separator:ga0394bb6dc964709e5b9bb5458ecfc7b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:aa5864aa91aa0fd0a3f37cb8d98ee2001"><td class="memTemplParams" colspan="2">template&lt;class V &gt; </td></tr>
-<tr class="memitem:aa5864aa91aa0fd0a3f37cb8d98ee2001"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#aa5864aa91aa0fd0a3f37cb8d98ee2001">traits</a> = detail::traits&lt; V &gt;</td></tr>
-<tr class="separator:aa5864aa91aa0fd0a3f37cb8d98ee2001"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga57fadffcca46517bce796d568435421e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html#ga57fadffcca46517bce796d568435421e">simdpp::GetArchCb</a> = std::function&lt; ArchUserInfo()&gt;</td></tr>
+<tr class="separator:ga57fadffcca46517bce796d568435421e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ga5335c7b7726de1a63a10b2975ad430b4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html#ga5335c7b7726de1a63a10b2975ad430b4">simdpp::Arch</a> : std::uint32_t { <br/>
+&#160;&#160;<a class="el" href="a00118.html#gga5335c7b7726de1a63a10b2975ad430b4a91defaee20407d9afa24e2b5951fe050">simdpp::NONE_NULL</a> = 0, 
+<br/>
+&#160;&#160;<a class="el" href="a00118.html#gga5335c7b7726de1a63a10b2975ad430b4a48e87236b81a910d46ff095785afe7c3">simdpp::X86_SSE2</a> = 1 &lt;&lt; 1, 
+<br/>
+&#160;&#160;<a class="el" href="a00118.html#gga5335c7b7726de1a63a10b2975ad430b4a09233b5f84bf85d570cc1a4c7ad4bbbb">simdpp::X86_SSE3</a> = 1 &lt;&lt; 2, 
+<br/>
+&#160;&#160;<a class="el" href="a00118.html#gga5335c7b7726de1a63a10b2975ad430b4aa483f7f07c159237d38b5af95f789f9a">simdpp::X86_SSSE3</a> = 1 &lt;&lt; 3, 
+<br/>
+&#160;&#160;<a class="el" href="a00118.html#gga5335c7b7726de1a63a10b2975ad430b4af34beef8886ae794211e8d006ca9f72f">simdpp::X86_SSE4_1</a> = 1 &lt;&lt; 4, 
+<br/>
+&#160;&#160;<a class="el" href="a00118.html#gga5335c7b7726de1a63a10b2975ad430b4a24578c6cc675738b84b96b1c9566e323">simdpp::X86_AVX</a> = 1 &lt;&lt; 5, 
+<br/>
+&#160;&#160;<a class="el" href="a00118.html#gga5335c7b7726de1a63a10b2975ad430b4a1b9441aadd778146e022fba537de7ff7">simdpp::X86_AVX2</a> = 1 &lt;&lt; 6, 
+<br/>
+&#160;&#160;<a class="el" href="a00118.html#gga5335c7b7726de1a63a10b2975ad430b4a368ac0bda5a399d5046dbb1c746ad22d">simdpp::ARM_NEON</a> = 1 &lt;&lt; 0, 
+<br/>
+&#160;&#160;<a class="el" href="a00118.html#gga5335c7b7726de1a63a10b2975ad430b4a420f5a04e2c0cf9a62ad9561cd738be7">simdpp::ARM_NEON_FLT_SP</a> = 1 &lt;&lt; 1
+<br/>
+ }</td></tr>
+<tr class="memdesc:ga5335c7b7726de1a63a10b2975ad430b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identifies supported instruction set.  <a href="a00118.html#ga5335c7b7726de1a63a10b2975ad430b4">More...</a><br/></td></tr>
+<tr class="separator:ga5335c7b7726de1a63a10b2975ad430b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a36cbfb1b4a52717e3e73d4320393c393"><td class="memTemplParams" colspan="2">template&lt;class V &gt; </td></tr>
-<tr class="memitem:a36cbfb1b4a52717e3e73d4320393c393"><td class="memTemplItemLeft" align="right" valign="top">V&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#a36cbfb1b4a52717e3e73d4320393c393">bit_and</a> (V a, V b)</td></tr>
-<tr class="separator:a36cbfb1b4a52717e3e73d4320393c393"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae184a0a870bf39f874da5ab380fb24d4"><td class="memTemplParams" colspan="2">template&lt;class V &gt; </td></tr>
-<tr class="memitem:ae184a0a870bf39f874da5ab380fb24d4"><td class="memTemplItemLeft" align="right" valign="top">V&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#ae184a0a870bf39f874da5ab380fb24d4">bit_andnot</a> (V a, V b)</td></tr>
-<tr class="separator:ae184a0a870bf39f874da5ab380fb24d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2551e3bfb485019888437c229edabd57"><td class="memTemplParams" colspan="2">template&lt;class V &gt; </td></tr>
-<tr class="memitem:a2551e3bfb485019888437c229edabd57"><td class="memTemplItemLeft" align="right" valign="top">V&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#a2551e3bfb485019888437c229edabd57">bit_or</a> (V a, V b)</td></tr>
-<tr class="separator:a2551e3bfb485019888437c229edabd57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26ad82631fdeea58d4cfef2f12d2a599"><td class="memTemplParams" colspan="2">template&lt;class V &gt; </td></tr>
-<tr class="memitem:a26ad82631fdeea58d4cfef2f12d2a599"><td class="memTemplItemLeft" align="right" valign="top">V&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#a26ad82631fdeea58d4cfef2f12d2a599">bit_xor</a> (V a, V b)</td></tr>
-<tr class="separator:a26ad82631fdeea58d4cfef2f12d2a599"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2476fd9ad0fc68c98562d8f8d0fef91c"><td class="memTemplParams" colspan="2">template&lt;class V &gt; </td></tr>
-<tr class="memitem:a2476fd9ad0fc68c98562d8f8d0fef91c"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#a2476fd9ad0fc68c98562d8f8d0fef91c">cmp_eq</a> (V a, V b) -&gt; typename <a class="el" href="a00118.html#aa5864aa91aa0fd0a3f37cb8d98ee2001">traits</a>&lt; V &gt;::int_vector_type</td></tr>
-<tr class="separator:a2476fd9ad0fc68c98562d8f8d0fef91c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5dff4cb9bd4a940329c7f60ce8e847e2"><td class="memTemplParams" colspan="2">template&lt;class V &gt; </td></tr>
-<tr class="memitem:a5dff4cb9bd4a940329c7f60ce8e847e2"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#a5dff4cb9bd4a940329c7f60ce8e847e2">cmp_neq</a> (V a, V b) -&gt; typename <a class="el" href="a00118.html#aa5864aa91aa0fd0a3f37cb8d98ee2001">traits</a>&lt; V &gt;::int_vector_type</td></tr>
-<tr class="separator:a5dff4cb9bd4a940329c7f60ce8e847e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8b7a4dc288baa21ea59a22b4ed8f9bc"><td class="memTemplParams" colspan="2">template&lt;class V &gt; </td></tr>
-<tr class="memitem:ad8b7a4dc288baa21ea59a22b4ed8f9bc"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#ad8b7a4dc288baa21ea59a22b4ed8f9bc">cmp_lt</a> (V a, V b) -&gt; typename <a class="el" href="a00118.html#aa5864aa91aa0fd0a3f37cb8d98ee2001">traits</a>&lt; V &gt;::int_vector_type</td></tr>
-<tr class="separator:ad8b7a4dc288baa21ea59a22b4ed8f9bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abefbacafe3e6a8ccf4295ff3617688f2"><td class="memTemplParams" colspan="2">template&lt;class V &gt; </td></tr>
-<tr class="memitem:abefbacafe3e6a8ccf4295ff3617688f2"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#abefbacafe3e6a8ccf4295ff3617688f2">cmp_gt</a> (V a, V b) -&gt; typename <a class="el" href="a00118.html#aa5864aa91aa0fd0a3f37cb8d98ee2001">traits</a>&lt; V &gt;::int_vector_type</td></tr>
-<tr class="separator:abefbacafe3e6a8ccf4295ff3617688f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb89fa086e30f599d571dabcd51d808e"><td class="memTemplParams" colspan="2">template&lt;class R , class V , class C &gt; </td></tr>
-<tr class="memitem:acb89fa086e30f599d571dabcd51d808e"><td class="memTemplItemLeft" align="right" valign="top">R&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#acb89fa086e30f599d571dabcd51d808e">foreach</a> (V v, C c)</td></tr>
-<tr class="separator:acb89fa086e30f599d571dabcd51d808e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad8b8cfb4fd086482e1cb6d725400c37"><td class="memTemplParams" colspan="2">template&lt;class R , class V1 , class V2 , class C &gt; </td></tr>
-<tr class="memitem:aad8b8cfb4fd086482e1cb6d725400c37"><td class="memTemplItemLeft" align="right" valign="top">R&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#aad8b8cfb4fd086482e1cb6d725400c37">foreach</a> (V1 v1, V2 v2, C c)</td></tr>
-<tr class="separator:aad8b8cfb4fd086482e1cb6d725400c37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adec058c748949aad62d5eb2f2e9cb9e8"><td class="memTemplParams" colspan="2">template&lt;class V &gt; </td></tr>
-<tr class="memitem:adec058c748949aad62d5eb2f2e9cb9e8"><td class="memTemplItemLeft" align="right" valign="top">V&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#adec058c748949aad62d5eb2f2e9cb9e8">abs</a> (V a)</td></tr>
-<tr class="separator:adec058c748949aad62d5eb2f2e9cb9e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b935919f52396b155d7c64073c04207"><td class="memTemplParams" colspan="2">template&lt;class T , class U &gt; </td></tr>
-<tr class="memitem:a7b935919f52396b155d7c64073c04207"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#a7b935919f52396b155d7c64073c04207">saturate</a> (U t)</td></tr>
-<tr class="separator:a7b935919f52396b155d7c64073c04207"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a244d3bdbac1174815d43119257a4bdba"><td class="memTemplParams" colspan="2">template&lt;class V &gt; </td></tr>
-<tr class="memitem:a244d3bdbac1174815d43119257a4bdba"><td class="memTemplItemLeft" align="right" valign="top">V&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#a244d3bdbac1174815d43119257a4bdba">add</a> (V a, V b)</td></tr>
-<tr class="separator:a244d3bdbac1174815d43119257a4bdba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7089b56f0e7bdb06bbff7078bece22d1"><td class="memTemplParams" colspan="2">template&lt;class V &gt; </td></tr>
-<tr class="memitem:a7089b56f0e7bdb06bbff7078bece22d1"><td class="memTemplItemLeft" align="right" valign="top">V&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#a7089b56f0e7bdb06bbff7078bece22d1">adds</a> (V a, V b)</td></tr>
-<tr class="separator:a7089b56f0e7bdb06bbff7078bece22d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc5ac34440e5238c2d309611633a4420"><td class="memTemplParams" colspan="2">template&lt;class V &gt; </td></tr>
-<tr class="memitem:abc5ac34440e5238c2d309611633a4420"><td class="memTemplItemLeft" align="right" valign="top">V&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#abc5ac34440e5238c2d309611633a4420">sub</a> (V a, V b)</td></tr>
-<tr class="separator:abc5ac34440e5238c2d309611633a4420"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a925d7a4fcf291238119da03048d56f78"><td class="memTemplParams" colspan="2">template&lt;class V &gt; </td></tr>
-<tr class="memitem:a925d7a4fcf291238119da03048d56f78"><td class="memTemplItemLeft" align="right" valign="top">V&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#a925d7a4fcf291238119da03048d56f78">subs</a> (V a, V b)</td></tr>
-<tr class="separator:a925d7a4fcf291238119da03048d56f78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade6195184ef52d1f6553a474ff0d4ad7"><td class="memTemplParams" colspan="2">template&lt;class V &gt; </td></tr>
-<tr class="memitem:ade6195184ef52d1f6553a474ff0d4ad7"><td class="memTemplItemLeft" align="right" valign="top">V&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#ade6195184ef52d1f6553a474ff0d4ad7">neg</a> (V a)</td></tr>
-<tr class="separator:ade6195184ef52d1f6553a474ff0d4ad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc4766b7484f2508f19868c972182511"><td class="memTemplParams" colspan="2">template&lt;class V &gt; </td></tr>
-<tr class="memitem:adc4766b7484f2508f19868c972182511"><td class="memTemplItemLeft" align="right" valign="top">V&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#adc4766b7484f2508f19868c972182511">mul</a> (V a, V b)</td></tr>
-<tr class="separator:adc4766b7484f2508f19868c972182511"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d774f0a03fcf0424b4685010b2cccee"><td class="memTemplParams" colspan="2">template&lt;unsigned P, class V &gt; </td></tr>
-<tr class="memitem:a0d774f0a03fcf0424b4685010b2cccee"><td class="memTemplItemLeft" align="right" valign="top">V&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#a0d774f0a03fcf0424b4685010b2cccee">div_p</a> (V a, V b)</td></tr>
-<tr class="separator:a0d774f0a03fcf0424b4685010b2cccee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f7a2d1cfa5780d34b0b87436314b38b"><td class="memTemplParams" colspan="2">template&lt;class V &gt; </td></tr>
-<tr class="memitem:a2f7a2d1cfa5780d34b0b87436314b38b"><td class="memTemplItemLeft" align="right" valign="top">V&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#a2f7a2d1cfa5780d34b0b87436314b38b">shift_r</a> (V a, unsigned shift)</td></tr>
-<tr class="separator:a2f7a2d1cfa5780d34b0b87436314b38b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb3baf0708157f00331ccc443d0b8827"><td class="memTemplParams" colspan="2">template&lt;class V &gt; </td></tr>
-<tr class="memitem:acb3baf0708157f00331ccc443d0b8827"><td class="memTemplItemLeft" align="right" valign="top">V&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#acb3baf0708157f00331ccc443d0b8827">shift_l</a> (V a, unsigned shift)</td></tr>
-<tr class="separator:acb3baf0708157f00331ccc443d0b8827"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42c8a69b39d3ec6aec240c69d3964113"><td class="memTemplParams" colspan="2">template&lt;class V &gt; </td></tr>
-<tr class="memitem:a42c8a69b39d3ec6aec240c69d3964113"><td class="memTemplItemLeft" align="right" valign="top">V&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#a42c8a69b39d3ec6aec240c69d3964113">min</a> (V a, V b)</td></tr>
-<tr class="separator:a42c8a69b39d3ec6aec240c69d3964113"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bc5afc4076ce1898e637dbdc2bda1a3"><td class="memTemplParams" colspan="2">template&lt;class V &gt; </td></tr>
-<tr class="memitem:a8bc5afc4076ce1898e637dbdc2bda1a3"><td class="memTemplItemLeft" align="right" valign="top">V&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#a8bc5afc4076ce1898e637dbdc2bda1a3">max</a> (V a, V b)</td></tr>
-<tr class="separator:a8bc5afc4076ce1898e637dbdc2bda1a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40d589141be3f34cf58f29aa8be4caec"><td class="memTemplParams" colspan="2">template&lt;class V &gt; </td></tr>
-<tr class="memitem:a40d589141be3f34cf58f29aa8be4caec"><td class="memTemplItemLeft" align="right" valign="top">V&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#a40d589141be3f34cf58f29aa8be4caec">load</a> (V &amp;a, const void *p)</td></tr>
-<tr class="separator:a40d589141be3f34cf58f29aa8be4caec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5dc403af27cca48720e0023e75c8220"><td class="memTemplParams" colspan="2">template&lt;class V &gt; </td></tr>
-<tr class="memitem:ac5dc403af27cca48720e0023e75c8220"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#ac5dc403af27cca48720e0023e75c8220">load_packed2</a> (V &amp;a, V &amp;b, const void *p)</td></tr>
-<tr class="separator:ac5dc403af27cca48720e0023e75c8220"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeeb94b249398433bb9c042ef50b62b3c"><td class="memTemplParams" colspan="2">template&lt;class V &gt; </td></tr>
-<tr class="memitem:aeeb94b249398433bb9c042ef50b62b3c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#aeeb94b249398433bb9c042ef50b62b3c">load_packed3</a> (V &amp;a, V &amp;b, V &amp;c, const void *p)</td></tr>
-<tr class="separator:aeeb94b249398433bb9c042ef50b62b3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afba2d241a6e1a462c3d1dd335b7547dd"><td class="memTemplParams" colspan="2">template&lt;class V &gt; </td></tr>
-<tr class="memitem:afba2d241a6e1a462c3d1dd335b7547dd"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#afba2d241a6e1a462c3d1dd335b7547dd">load_packed4</a> (V &amp;a, V &amp;b, V &amp;c, V &amp;d, const void *p)</td></tr>
-<tr class="separator:afba2d241a6e1a462c3d1dd335b7547dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1283b69ba0cadb2a31f780388c61669e"><td class="memTemplParams" colspan="2">template&lt;class V &gt; </td></tr>
-<tr class="memitem:a1283b69ba0cadb2a31f780388c61669e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#a1283b69ba0cadb2a31f780388c61669e">store</a> (void *p, V a)</td></tr>
-<tr class="separator:a1283b69ba0cadb2a31f780388c61669e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68e79afee159d2f03a57794e51bb6a90"><td class="memTemplParams" colspan="2">template&lt;class V &gt; </td></tr>
-<tr class="memitem:a68e79afee159d2f03a57794e51bb6a90"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#a68e79afee159d2f03a57794e51bb6a90">store_first</a> (void *p, V a, unsigned n)</td></tr>
-<tr class="separator:a68e79afee159d2f03a57794e51bb6a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c6a069e56cc29b1223baca4593695b1"><td class="memTemplParams" colspan="2">template&lt;class V &gt; </td></tr>
-<tr class="memitem:a7c6a069e56cc29b1223baca4593695b1"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#a7c6a069e56cc29b1223baca4593695b1">store_last</a> (void *p, V a, unsigned n)</td></tr>
-<tr class="separator:a7c6a069e56cc29b1223baca4593695b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d73e781728ec85c4b20fae583dd6f83"><td class="memTemplParams" colspan="2">template&lt;class V &gt; </td></tr>
-<tr class="memitem:a4d73e781728ec85c4b20fae583dd6f83"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#a4d73e781728ec85c4b20fae583dd6f83">store_packed2</a> (void *p, V &amp;a, V &amp;b)</td></tr>
-<tr class="separator:a4d73e781728ec85c4b20fae583dd6f83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27786b44be245553871a66ec55db1a81"><td class="memTemplParams" colspan="2">template&lt;class V &gt; </td></tr>
-<tr class="memitem:a27786b44be245553871a66ec55db1a81"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#a27786b44be245553871a66ec55db1a81">store_packed3</a> (void *p, V &amp;a, V &amp;b, V &amp;c)</td></tr>
-<tr class="separator:a27786b44be245553871a66ec55db1a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55ee3603bc3bf790691d926809f1ba68"><td class="memTemplParams" colspan="2">template&lt;class V &gt; </td></tr>
-<tr class="memitem:a55ee3603bc3bf790691d926809f1ba68"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#a55ee3603bc3bf790691d926809f1ba68">store_packed4</a> (void *p, V &amp;a, V &amp;b, V &amp;c, V &amp;d)</td></tr>
-<tr class="separator:a55ee3603bc3bf790691d926809f1ba68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace8dda2819582e327badaffb4f1606d3"><td class="memTemplParams" colspan="2">template&lt;class V &gt; </td></tr>
-<tr class="memitem:ace8dda2819582e327badaffb4f1606d3"><td class="memTemplItemLeft" align="right" valign="top">V&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#ace8dda2819582e327badaffb4f1606d3">set_broadcast</a> (V &amp;a, typename <a class="el" href="a00118.html#aa5864aa91aa0fd0a3f37cb8d98ee2001">traits</a>&lt; V &gt;::element_type x)</td></tr>
-<tr class="separator:ace8dda2819582e327badaffb4f1606d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb4d98cd23612c1fde06cd7e3cc070c1"><td class="memTemplParams" colspan="2">template&lt;class V , class E  = typename traits&lt;V&gt;::element_type&gt; </td></tr>
-<tr class="memitem:abb4d98cd23612c1fde06cd7e3cc070c1"><td class="memTemplItemLeft" align="right" valign="top">V&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#abb4d98cd23612c1fde06cd7e3cc070c1">make_vec</a> (E v0)</td></tr>
-<tr class="separator:abb4d98cd23612c1fde06cd7e3cc070c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a211efa34a54f40f54bd22d0431bf6016"><td class="memTemplParams" colspan="2">template&lt;class V , class E  = typename traits&lt;V&gt;::element_type&gt; </td></tr>
-<tr class="memitem:a211efa34a54f40f54bd22d0431bf6016"><td class="memTemplItemLeft" align="right" valign="top">V&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#a211efa34a54f40f54bd22d0431bf6016">make_vec</a> (E v0, E v1)</td></tr>
-<tr class="separator:a211efa34a54f40f54bd22d0431bf6016"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a069dd0986d3d3c93edfe4f069eb6afe6"><td class="memTemplParams" colspan="2">template&lt;class V , class E  = typename traits&lt;V&gt;::element_type&gt; </td></tr>
-<tr class="memitem:a069dd0986d3d3c93edfe4f069eb6afe6"><td class="memTemplItemLeft" align="right" valign="top">V&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#a069dd0986d3d3c93edfe4f069eb6afe6">make_vec</a> (E v0, E v1, E v2, E v3)</td></tr>
-<tr class="separator:a069dd0986d3d3c93edfe4f069eb6afe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a398002b2dee939165af9eb76190dae07"><td class="memTemplParams" colspan="2">template&lt;class V , class E  = typename traits&lt;V&gt;::element_type&gt; </td></tr>
-<tr class="memitem:a398002b2dee939165af9eb76190dae07"><td class="memTemplItemLeft" align="right" valign="top">V&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#a398002b2dee939165af9eb76190dae07">make_vec</a> (E v0, E v1, E v2, E v3, E v4, E v5, E v6, E v7)</td></tr>
-<tr class="separator:a398002b2dee939165af9eb76190dae07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98b0391cd23250b7ba4d495cf69a19b2"><td class="memTemplParams" colspan="2">template&lt;class V , class E  = typename traits&lt;V&gt;::element_type&gt; </td></tr>
-<tr class="memitem:a98b0391cd23250b7ba4d495cf69a19b2"><td class="memTemplItemLeft" align="right" valign="top">V&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#a98b0391cd23250b7ba4d495cf69a19b2">make_vec</a> (E v0, E v1, E v2, E v3, E v4, E v5, E v6, E v7, E v8, E v9, E v10, E v11, E v12, E v13, E v14, E v15)</td></tr>
-<tr class="separator:a98b0391cd23250b7ba4d495cf69a19b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae011b412c3f4c425f86bcf1f5b9b72a6"><td class="memTemplParams" colspan="2">template&lt;class V &gt; </td></tr>
-<tr class="memitem:ae011b412c3f4c425f86bcf1f5b9b72a6"><td class="memTemplItemLeft" align="right" valign="top">V&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#ae011b412c3f4c425f86bcf1f5b9b72a6">zip_lo</a> (V a, V b)</td></tr>
-<tr class="separator:ae011b412c3f4c425f86bcf1f5b9b72a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5161970a4d16ae1a8f7e0faf7cc6cfe"><td class="memTemplParams" colspan="2">template&lt;class V &gt; </td></tr>
-<tr class="memitem:ac5161970a4d16ae1a8f7e0faf7cc6cfe"><td class="memTemplItemLeft" align="right" valign="top">V&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#ac5161970a4d16ae1a8f7e0faf7cc6cfe">zip_hi</a> (V a, V b)</td></tr>
-<tr class="separator:ac5161970a4d16ae1a8f7e0faf7cc6cfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2897398be3980cfd72ba0ea9b3c4668"><td class="memTemplParams" colspan="2">template&lt;unsigned pos, class V &gt; </td></tr>
-<tr class="memitem:ac2897398be3980cfd72ba0ea9b3c4668"><td class="memTemplItemLeft" align="right" valign="top">V&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#ac2897398be3980cfd72ba0ea9b3c4668">broadcast</a> (V v)</td></tr>
-<tr class="separator:ac2897398be3980cfd72ba0ea9b3c4668"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accc6a0aeb90d0638e9dccbb896ed5b85"><td class="memTemplParams" colspan="2">template&lt;unsigned shift, class V &gt; </td></tr>
-<tr class="memitem:accc6a0aeb90d0638e9dccbb896ed5b85"><td class="memTemplItemLeft" align="right" valign="top">V&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#accc6a0aeb90d0638e9dccbb896ed5b85">align</a> (V lo, V hi)</td></tr>
-<tr class="separator:accc6a0aeb90d0638e9dccbb896ed5b85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32880b287d2890c6cd3fa01e2de8f6a2"><td class="memTemplParams" colspan="2">template&lt;class V &gt; </td></tr>
-<tr class="memitem:a32880b287d2890c6cd3fa01e2de8f6a2"><td class="memTemplItemLeft" align="right" valign="top">V&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#a32880b287d2890c6cd3fa01e2de8f6a2">unzip_lo</a> (V a, V b)</td></tr>
-<tr class="separator:a32880b287d2890c6cd3fa01e2de8f6a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9750ded121c4b095931fe9882b95674"><td class="memTemplParams" colspan="2">template&lt;class V &gt; </td></tr>
-<tr class="memitem:aa9750ded121c4b095931fe9882b95674"><td class="memTemplItemLeft" align="right" valign="top">V&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#aa9750ded121c4b095931fe9882b95674">unzip_hi</a> (V a, V b)</td></tr>
-<tr class="separator:aa9750ded121c4b095931fe9882b95674"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1fc871e3a9f10b165a654581210c9a5"><td class="memTemplParams" colspan="2">template&lt;class V &gt; </td></tr>
-<tr class="memitem:ad1fc871e3a9f10b165a654581210c9a5"><td class="memTemplItemLeft" align="right" valign="top">V&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#ad1fc871e3a9f10b165a654581210c9a5">blend</a> (V on, V off, V mask)</td></tr>
-<tr class="separator:ad1fc871e3a9f10b165a654581210c9a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a309820b94a587e4c6cbe664236846b86"><td class="memTemplParams" colspan="2">template&lt;unsigned s0, unsigned s1, class V &gt; </td></tr>
-<tr class="memitem:a309820b94a587e4c6cbe664236846b86"><td class="memTemplItemLeft" align="right" valign="top">V&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#a309820b94a587e4c6cbe664236846b86">permute</a> (V a)</td></tr>
-<tr class="separator:a309820b94a587e4c6cbe664236846b86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71434a8da740cd5c40e5f6972eda48a9"><td class="memTemplParams" colspan="2">template&lt;unsigned s0, unsigned s1, unsigned s2, unsigned s3, class V &gt; </td></tr>
-<tr class="memitem:a71434a8da740cd5c40e5f6972eda48a9"><td class="memTemplItemLeft" align="right" valign="top">V&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#a71434a8da740cd5c40e5f6972eda48a9">permute</a> (V a)</td></tr>
-<tr class="separator:a71434a8da740cd5c40e5f6972eda48a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0a166b1f567947ba68447c49692aae9"><td class="memTemplParams" colspan="2">template&lt;unsigned s0, unsigned s1, class V &gt; </td></tr>
-<tr class="memitem:ad0a166b1f567947ba68447c49692aae9"><td class="memTemplItemLeft" align="right" valign="top">V&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#ad0a166b1f567947ba68447c49692aae9">shuffle1</a> (V a, V b)</td></tr>
-<tr class="separator:ad0a166b1f567947ba68447c49692aae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab65d8b8178cfdd6e6716f63f19d8f881"><td class="memTemplParams" colspan="2">template&lt;unsigned s0, unsigned s1, unsigned s2, unsigned s3, class V &gt; </td></tr>
-<tr class="memitem:ab65d8b8178cfdd6e6716f63f19d8f881"><td class="memTemplItemLeft" align="right" valign="top">V&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#ab65d8b8178cfdd6e6716f63f19d8f881">shuffle2</a> (V a, V b)</td></tr>
-<tr class="separator:ab65d8b8178cfdd6e6716f63f19d8f881"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affc13c2b56837708d51774bb43134fdd"><td class="memTemplParams" colspan="2">template&lt;class V &gt; </td></tr>
-<tr class="memitem:affc13c2b56837708d51774bb43134fdd"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#affc13c2b56837708d51774bb43134fdd">transpose2</a> (V &amp;a0, V &amp;a1)</td></tr>
-<tr class="separator:affc13c2b56837708d51774bb43134fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a23c607df65217d87b31380a0c4c92e"><td class="memTemplParams" colspan="2">template&lt;class V &gt; </td></tr>
-<tr class="memitem:a7a23c607df65217d87b31380a0c4c92e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#a7a23c607df65217d87b31380a0c4c92e">transpose4</a> (V &amp;a0, V &amp;a1, V &amp;a2, V &amp;a3)</td></tr>
-<tr class="separator:a7a23c607df65217d87b31380a0c4c92e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af289040314646da835af95e57412392c"><td class="memTemplParams" colspan="2">template&lt;class V &gt; </td></tr>
-<tr class="memitem:af289040314646da835af95e57412392c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#af289040314646da835af95e57412392c">transpose8</a> (V &amp;a0, V &amp;a1, V &amp;a2, V &amp;a3, V &amp;a4, V &amp;a5, V &amp;a6, V &amp;a7)</td></tr>
-<tr class="separator:af289040314646da835af95e57412392c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22c4aa24541b553287aaefa65b7c69f0"><td class="memTemplParams" colspan="2">template&lt;class V &gt; </td></tr>
-<tr class="memitem:a22c4aa24541b553287aaefa65b7c69f0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00118.html#a22c4aa24541b553287aaefa65b7c69f0">transpose16</a> (V &amp;a0, V &amp;a1, V &amp;a2, V &amp;a3, V &amp;a4, V &amp;a5, V &amp;a6, V &amp;a7, V &amp;a8, V &amp;a9, V &amp;a10, V &amp;a11, V &amp;a12, V &amp;a13, V &amp;a14, V &amp;a15)</td></tr>
-<tr class="separator:a22c4aa24541b553287aaefa65b7c69f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga76a7e1d9682d0b80ae217d881ebd4b56"><td class="memItemLeft" align="right" valign="top">Arch&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html#ga76a7e1d9682d0b80ae217d881ebd4b56">simdpp::this_compile_arch</a> ()</td></tr>
+<tr class="memdesc:ga76a7e1d9682d0b80ae217d881ebd4b56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the instruction set flags that will be required by the currently compiled code.  <a href="#ga76a7e1d9682d0b80ae217d881ebd4b56">More...</a><br/></td></tr>
+<tr class="separator:ga76a7e1d9682d0b80ae217d881ebd4b56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaccd069283aa674f25a0223e797465acc"><td class="memItemLeft" align="right" valign="top">Arch &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html#gaccd069283aa674f25a0223e797465acc">simdpp::operator|=</a> (Arch &amp;x, const Arch &amp;y)</td></tr>
+<tr class="memdesc:gaccd069283aa674f25a0223e797465acc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitwise operators for <code>Arch</code>.  <a href="#gaccd069283aa674f25a0223e797465acc">More...</a><br/></td></tr>
+<tr class="separator:gaccd069283aa674f25a0223e797465acc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga393c6361b34c2e4d4bd1d8474dd4d140"><td class="memItemLeft" align="right" valign="top">Arch &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html#ga393c6361b34c2e4d4bd1d8474dd4d140">simdpp::operator&amp;=</a> (Arch &amp;x, const Arch &amp;y)</td></tr>
+<tr class="memdesc:ga393c6361b34c2e4d4bd1d8474dd4d140"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitwise operators for <code>Arch</code>.  <a href="#ga393c6361b34c2e4d4bd1d8474dd4d140">More...</a><br/></td></tr>
+<tr class="separator:ga393c6361b34c2e4d4bd1d8474dd4d140"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae65f225594866cec403804180c1a80b8"><td class="memItemLeft" align="right" valign="top">Arch&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html#gae65f225594866cec403804180c1a80b8">simdpp::operator|</a> (const Arch &amp;x, const Arch &amp;y)</td></tr>
+<tr class="memdesc:gae65f225594866cec403804180c1a80b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitwise operators for <code>Arch</code>.  <a href="#gae65f225594866cec403804180c1a80b8">More...</a><br/></td></tr>
+<tr class="separator:gae65f225594866cec403804180c1a80b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae46de53d24834d2e128098807a5e3ad6"><td class="memItemLeft" align="right" valign="top">Arch&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html#gae46de53d24834d2e128098807a5e3ad6">simdpp::operator&amp;</a> (const Arch &amp;x, const Arch &amp;y)</td></tr>
+<tr class="memdesc:gae46de53d24834d2e128098807a5e3ad6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitwise operators for <code>Arch</code>.  <a href="#gae46de53d24834d2e128098807a5e3ad6">More...</a><br/></td></tr>
+<tr class="separator:gae46de53d24834d2e128098807a5e3ad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga492daf1de430083aa9b8810975fb0839"><td class="memItemLeft" align="right" valign="top">Arch&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html#ga492daf1de430083aa9b8810975fb0839">simdpp::operator~</a> (const Arch &amp;x)</td></tr>
+<tr class="memdesc:ga492daf1de430083aa9b8810975fb0839"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitwise operators for <code>Arch</code>.  <a href="#ga492daf1de430083aa9b8810975fb0839">More...</a><br/></td></tr>
+<tr class="separator:ga492daf1de430083aa9b8810975fb0839"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a class="anchor" id="aa5864aa91aa0fd0a3f37cb8d98ee2001"></a>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="ga0394bb6dc964709e5b9bb5458ecfc7b7"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class V &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="a00118.html#aa5864aa91aa0fd0a3f37cb8d98ee2001">simdpp::null::traits</a> = typedef detail::traits&lt;V&gt;</td>
+          <td class="memname">#define SIMDPP_USER_ARCH_INFO&#160;&#160;&#160;::simdpp::detail::default_user_get_arch_info</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>SIMDPP_USER_ARCH_INFO User-definable macro that specifies user-defined way to get supported instruction sets of the current processor. </p>
+<p>If the macro is defined, this must be done before including simdpp/simd.h. The macro must evaluate to a constant expression that could implicitly initialize an object of type <code>std::function&lt;ArchUserInfo()&gt;</code>.</p>
+<p>The return value <em>x</em> (of type <code>ArchUserInfo</code>) is interpreted as follows:</p>
+<p>x.supported identifies features that are supported by the processor. x.unsupported identifies features that are not supported by the processor.</p>
+<p>If some features are defined as neither supported or not supported (any flags not set in the result of x.supported | x.unsupported), then the internal libsimdpp implementation is used to determine whether the current processor supports them or not.</p>
+<p>To override the internal libsimdpp implementation completely, set x.unsupported = ~x.supported.</p>
+<p>The user must ensure that the returned information is sensible: e.g. SSE2 must be supported if SSE3 support is indicated. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a class="anchor" id="ga57fadffcca46517bce796d568435421e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="a00118.html#ga57fadffcca46517bce796d568435421e">simdpp::GetArchCb</a> = typedef std::function&lt;ArchUserInfo()&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a class="anchor" id="ga5335c7b7726de1a63a10b2975ad430b4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="a00118.html#ga5335c7b7726de1a63a10b2975ad430b4">simdpp::Arch</a> : std::uint32_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Identifies supported instruction set. </p>
+<p>This type is a bitmask type</p>
+<p>Note: the exact values may change release to release. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="gga5335c7b7726de1a63a10b2975ad430b4a91defaee20407d9afa24e2b5951fe050"></a>NONE_NULL</em>&nbsp;</td><td class="fielddoc">
+<p>Indicates that no SIMD instructions are supported. </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="gga5335c7b7726de1a63a10b2975ad430b4a48e87236b81a910d46ff095785afe7c3"></a>X86_SSE2</em>&nbsp;</td><td class="fielddoc">
+<p>Indicates x86 SSE2 support. </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="gga5335c7b7726de1a63a10b2975ad430b4a09233b5f84bf85d570cc1a4c7ad4bbbb"></a>X86_SSE3</em>&nbsp;</td><td class="fielddoc">
+<p>Indicates x86 SSE3 support. </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="gga5335c7b7726de1a63a10b2975ad430b4aa483f7f07c159237d38b5af95f789f9a"></a>X86_SSSE3</em>&nbsp;</td><td class="fielddoc">
+<p>Indicates x86 SSSE3 support. </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="gga5335c7b7726de1a63a10b2975ad430b4af34beef8886ae794211e8d006ca9f72f"></a>X86_SSE4_1</em>&nbsp;</td><td class="fielddoc">
+<p>Indicates x86 SSE4.1 support. </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="gga5335c7b7726de1a63a10b2975ad430b4a24578c6cc675738b84b96b1c9566e323"></a>X86_AVX</em>&nbsp;</td><td class="fielddoc">
+<p>Indicates x86 AVX support. </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="gga5335c7b7726de1a63a10b2975ad430b4a1b9441aadd778146e022fba537de7ff7"></a>X86_AVX2</em>&nbsp;</td><td class="fielddoc">
+<p>Indicates x86 AVX2 support. </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="gga5335c7b7726de1a63a10b2975ad430b4a368ac0bda5a399d5046dbb1c746ad22d"></a>ARM_NEON</em>&nbsp;</td><td class="fielddoc">
+<p>Indicates ARM NEON support (SP and DP floating-point math is executed on VFP) </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="gga5335c7b7726de1a63a10b2975ad430b4a420f5a04e2c0cf9a62ad9561cd738be7"></a>ARM_NEON_FLT_SP</em>&nbsp;</td><td class="fielddoc">
+<p>Indicates ARM NEON support (SP floating-point math is executed on NEON, DP floating-point math is executed on VFP) </p>
+</td></tr>
+</table>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="adec058c748949aad62d5eb2f2e9cb9e8"></a>
+<a class="anchor" id="gae46de53d24834d2e128098807a5e3ad6"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class V &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">V simdpp::null::abs </td>
+          <td class="memname">Arch simdpp::operator&amp; </td>
           <td>(</td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>a</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a244d3bdbac1174815d43119257a4bdba"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">V simdpp::null::add </td>
-          <td>(</td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
+          <td class="paramtype">const Arch &amp;&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
+          <td class="paramtype">const Arch &amp;&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -285,27 +221,35 @@ template&lt;class V &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>Bitwise operators for <code>Arch</code>. </p>
 
 </div>
 </div>
-<a class="anchor" id="a7089b56f0e7bdb06bbff7078bece22d1"></a>
+<a class="anchor" id="ga393c6361b34c2e4d4bd1d8474dd4d140"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class V &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">V simdpp::null::adds </td>
+          <td class="memname">Arch&amp; simdpp::operator&amp;= </td>
           <td>(</td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
+          <td class="paramtype">Arch &amp;&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
+          <td class="paramtype">const Arch &amp;&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -313,27 +257,35 @@ template&lt;class V &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>Bitwise operators for <code>Arch</code>. </p>
 
 </div>
 </div>
-<a class="anchor" id="accc6a0aeb90d0638e9dccbb896ed5b85"></a>
+<a class="anchor" id="gae65f225594866cec403804180c1a80b8"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;unsigned shift, class V &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">V simdpp::null::align </td>
+          <td class="memname">Arch simdpp::operator| </td>
           <td>(</td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>lo</em>, </td>
+          <td class="paramtype">const Arch &amp;&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>hi</em>&#160;</td>
+          <td class="paramtype">const Arch &amp;&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -341,27 +293,35 @@ template&lt;unsigned shift, class V &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>Bitwise operators for <code>Arch</code>. </p>
 
 </div>
 </div>
-<a class="anchor" id="a36cbfb1b4a52717e3e73d4320393c393"></a>
+<a class="anchor" id="gaccd069283aa674f25a0223e797465acc"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class V &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">V simdpp::null::bit_and </td>
+          <td class="memname">Arch&amp; simdpp::operator|= </td>
           <td>(</td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
+          <td class="paramtype">Arch &amp;&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
+          <td class="paramtype">const Arch &amp;&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -369,1692 +329,76 @@ template&lt;class V &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>Bitwise operators for <code>Arch</code>. </p>
 
 </div>
 </div>
-<a class="anchor" id="ae184a0a870bf39f874da5ab380fb24d4"></a>
+<a class="anchor" id="ga492daf1de430083aa9b8810975fb0839"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class V &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">V simdpp::null::bit_andnot </td>
+          <td class="memname">Arch simdpp::operator~ </td>
           <td>(</td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">const Arch &amp;&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>Bitwise operators for <code>Arch</code>. </p>
 
 </div>
 </div>
-<a class="anchor" id="a2551e3bfb485019888437c229edabd57"></a>
+<a class="anchor" id="ga76a7e1d9682d0b80ae217d881ebd4b56"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class V &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">V simdpp::null::bit_or </td>
+          <td class="memname">Arch simdpp::this_compile_arch </td>
           <td>(</td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a class="anchor" id="a26ad82631fdeea58d4cfef2f12d2a599"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">V simdpp::null::bit_xor </td>
-          <td>(</td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ad1fc871e3a9f10b165a654581210c9a5"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">V simdpp::null::blend </td>
-          <td>(</td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>on</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>off</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>mask</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ac2897398be3980cfd72ba0ea9b3c4668"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;unsigned pos, class V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">V simdpp::null::broadcast </td>
-          <td>(</td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>v</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a2476fd9ad0fc68c98562d8f8d0fef91c"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">auto simdpp::null::cmp_eq </td>
-          <td>(</td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> -&gt; typename traits&lt;V&gt;::int_vector_type
-</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="abefbacafe3e6a8ccf4295ff3617688f2"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">auto simdpp::null::cmp_gt </td>
-          <td>(</td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> -&gt; typename traits&lt;V&gt;::int_vector_type
-</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ad8b7a4dc288baa21ea59a22b4ed8f9bc"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">auto simdpp::null::cmp_lt </td>
-          <td>(</td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> -&gt; typename traits&lt;V&gt;::int_vector_type
-</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a5dff4cb9bd4a940329c7f60ce8e847e2"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">auto simdpp::null::cmp_neq </td>
-          <td>(</td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> -&gt; typename traits&lt;V&gt;::int_vector_type
-</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a0d774f0a03fcf0424b4685010b2cccee"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;unsigned P, class V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">V simdpp::null::div_p </td>
-          <td>(</td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="acb89fa086e30f599d571dabcd51d808e"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class R , class V , class C &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">R simdpp::null::foreach </td>
-          <td>(</td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>v</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">C&#160;</td>
-          <td class="paramname"><em>c</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aad8b8cfb4fd086482e1cb6d725400c37"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class R , class V1 , class V2 , class C &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">R simdpp::null::foreach </td>
-          <td>(</td>
-          <td class="paramtype">V1&#160;</td>
-          <td class="paramname"><em>v1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V2&#160;</td>
-          <td class="paramname"><em>v2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">C&#160;</td>
-          <td class="paramname"><em>c</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a40d589141be3f34cf58f29aa8be4caec"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">V simdpp::null::load </td>
-          <td>(</td>
-          <td class="paramtype">V &amp;&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>p</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ac5dc403af27cca48720e0023e75c8220"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void simdpp::null::load_packed2 </td>
-          <td>(</td>
-          <td class="paramtype">V &amp;&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V &amp;&#160;</td>
-          <td class="paramname"><em>b</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>p</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aeeb94b249398433bb9c042ef50b62b3c"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void simdpp::null::load_packed3 </td>
-          <td>(</td>
-          <td class="paramtype">V &amp;&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V &amp;&#160;</td>
-          <td class="paramname"><em>b</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V &amp;&#160;</td>
-          <td class="paramname"><em>c</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>p</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="afba2d241a6e1a462c3d1dd335b7547dd"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void simdpp::null::load_packed4 </td>
-          <td>(</td>
-          <td class="paramtype">V &amp;&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V &amp;&#160;</td>
-          <td class="paramname"><em>b</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V &amp;&#160;</td>
-          <td class="paramname"><em>c</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V &amp;&#160;</td>
-          <td class="paramname"><em>d</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>p</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="abb4d98cd23612c1fde06cd7e3cc070c1"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class V , class E  = typename traits&lt;V&gt;::element_type&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">V simdpp::null::make_vec </td>
-          <td>(</td>
-          <td class="paramtype">E&#160;</td>
-          <td class="paramname"><em>v0</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a211efa34a54f40f54bd22d0431bf6016"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class V , class E  = typename traits&lt;V&gt;::element_type&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">V simdpp::null::make_vec </td>
-          <td>(</td>
-          <td class="paramtype">E&#160;</td>
-          <td class="paramname"><em>v0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">E&#160;</td>
-          <td class="paramname"><em>v1</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a069dd0986d3d3c93edfe4f069eb6afe6"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class V , class E  = typename traits&lt;V&gt;::element_type&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">V simdpp::null::make_vec </td>
-          <td>(</td>
-          <td class="paramtype">E&#160;</td>
-          <td class="paramname"><em>v0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">E&#160;</td>
-          <td class="paramname"><em>v1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">E&#160;</td>
-          <td class="paramname"><em>v2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">E&#160;</td>
-          <td class="paramname"><em>v3</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a398002b2dee939165af9eb76190dae07"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class V , class E  = typename traits&lt;V&gt;::element_type&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">V simdpp::null::make_vec </td>
-          <td>(</td>
-          <td class="paramtype">E&#160;</td>
-          <td class="paramname"><em>v0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">E&#160;</td>
-          <td class="paramname"><em>v1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">E&#160;</td>
-          <td class="paramname"><em>v2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">E&#160;</td>
-          <td class="paramname"><em>v3</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">E&#160;</td>
-          <td class="paramname"><em>v4</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">E&#160;</td>
-          <td class="paramname"><em>v5</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">E&#160;</td>
-          <td class="paramname"><em>v6</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">E&#160;</td>
-          <td class="paramname"><em>v7</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a98b0391cd23250b7ba4d495cf69a19b2"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class V , class E  = typename traits&lt;V&gt;::element_type&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">V simdpp::null::make_vec </td>
-          <td>(</td>
-          <td class="paramtype">E&#160;</td>
-          <td class="paramname"><em>v0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">E&#160;</td>
-          <td class="paramname"><em>v1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">E&#160;</td>
-          <td class="paramname"><em>v2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">E&#160;</td>
-          <td class="paramname"><em>v3</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">E&#160;</td>
-          <td class="paramname"><em>v4</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">E&#160;</td>
-          <td class="paramname"><em>v5</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">E&#160;</td>
-          <td class="paramname"><em>v6</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">E&#160;</td>
-          <td class="paramname"><em>v7</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">E&#160;</td>
-          <td class="paramname"><em>v8</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">E&#160;</td>
-          <td class="paramname"><em>v9</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">E&#160;</td>
-          <td class="paramname"><em>v10</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">E&#160;</td>
-          <td class="paramname"><em>v11</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">E&#160;</td>
-          <td class="paramname"><em>v12</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">E&#160;</td>
-          <td class="paramname"><em>v13</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">E&#160;</td>
-          <td class="paramname"><em>v14</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">E&#160;</td>
-          <td class="paramname"><em>v15</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a8bc5afc4076ce1898e637dbdc2bda1a3"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">V simdpp::null::max </td>
-          <td>(</td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a42c8a69b39d3ec6aec240c69d3964113"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">V simdpp::null::min </td>
-          <td>(</td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="adc4766b7484f2508f19868c972182511"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">V simdpp::null::mul </td>
-          <td>(</td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ade6195184ef52d1f6553a474ff0d4ad7"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">V simdpp::null::neg </td>
-          <td>(</td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>a</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a309820b94a587e4c6cbe664236846b86"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;unsigned s0, unsigned s1, class V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">V simdpp::null::permute </td>
-          <td>(</td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>a</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a71434a8da740cd5c40e5f6972eda48a9"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;unsigned s0, unsigned s1, unsigned s2, unsigned s3, class V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">V simdpp::null::permute </td>
-          <td>(</td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>a</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a7b935919f52396b155d7c64073c04207"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T , class U &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">T simdpp::null::saturate </td>
-          <td>(</td>
-          <td class="paramtype">U&#160;</td>
-          <td class="paramname"><em>t</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ace8dda2819582e327badaffb4f1606d3"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">V simdpp::null::set_broadcast </td>
-          <td>(</td>
-          <td class="paramtype">V &amp;&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">typename traits&lt; V &gt;::element_type&#160;</td>
-          <td class="paramname"><em>x</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="acb3baf0708157f00331ccc443d0b8827"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">V simdpp::null::shift_l </td>
-          <td>(</td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>shift</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a2f7a2d1cfa5780d34b0b87436314b38b"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">V simdpp::null::shift_r </td>
-          <td>(</td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>shift</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ad0a166b1f567947ba68447c49692aae9"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;unsigned s0, unsigned s1, class V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">V simdpp::null::shuffle1 </td>
-          <td>(</td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ab65d8b8178cfdd6e6716f63f19d8f881"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;unsigned s0, unsigned s1, unsigned s2, unsigned s3, class V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">V simdpp::null::shuffle2 </td>
-          <td>(</td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a1283b69ba0cadb2a31f780388c61669e"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void simdpp::null::store </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>p</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>a</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a68e79afee159d2f03a57794e51bb6a90"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void simdpp::null::store_first </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>p</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>n</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a7c6a069e56cc29b1223baca4593695b1"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void simdpp::null::store_last </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>p</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>n</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a4d73e781728ec85c4b20fae583dd6f83"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void simdpp::null::store_packed2 </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>p</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V &amp;&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V &amp;&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a27786b44be245553871a66ec55db1a81"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void simdpp::null::store_packed3 </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>p</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V &amp;&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V &amp;&#160;</td>
-          <td class="paramname"><em>b</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V &amp;&#160;</td>
-          <td class="paramname"><em>c</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a55ee3603bc3bf790691d926809f1ba68"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void simdpp::null::store_packed4 </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>p</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V &amp;&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V &amp;&#160;</td>
-          <td class="paramname"><em>b</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V &amp;&#160;</td>
-          <td class="paramname"><em>c</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V &amp;&#160;</td>
-          <td class="paramname"><em>d</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="abc5ac34440e5238c2d309611633a4420"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">V simdpp::null::sub </td>
-          <td>(</td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a925d7a4fcf291238119da03048d56f78"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">V simdpp::null::subs </td>
-          <td>(</td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a22c4aa24541b553287aaefa65b7c69f0"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void simdpp::null::transpose16 </td>
-          <td>(</td>
-          <td class="paramtype">V &amp;&#160;</td>
-          <td class="paramname"><em>a0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V &amp;&#160;</td>
-          <td class="paramname"><em>a1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V &amp;&#160;</td>
-          <td class="paramname"><em>a2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V &amp;&#160;</td>
-          <td class="paramname"><em>a3</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V &amp;&#160;</td>
-          <td class="paramname"><em>a4</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V &amp;&#160;</td>
-          <td class="paramname"><em>a5</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V &amp;&#160;</td>
-          <td class="paramname"><em>a6</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V &amp;&#160;</td>
-          <td class="paramname"><em>a7</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V &amp;&#160;</td>
-          <td class="paramname"><em>a8</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V &amp;&#160;</td>
-          <td class="paramname"><em>a9</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V &amp;&#160;</td>
-          <td class="paramname"><em>a10</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V &amp;&#160;</td>
-          <td class="paramname"><em>a11</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V &amp;&#160;</td>
-          <td class="paramname"><em>a12</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V &amp;&#160;</td>
-          <td class="paramname"><em>a13</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V &amp;&#160;</td>
-          <td class="paramname"><em>a14</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V &amp;&#160;</td>
-          <td class="paramname"><em>a15</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="affc13c2b56837708d51774bb43134fdd"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void simdpp::null::transpose2 </td>
-          <td>(</td>
-          <td class="paramtype">V &amp;&#160;</td>
-          <td class="paramname"><em>a0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V &amp;&#160;</td>
-          <td class="paramname"><em>a1</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a7a23c607df65217d87b31380a0c4c92e"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void simdpp::null::transpose4 </td>
-          <td>(</td>
-          <td class="paramtype">V &amp;&#160;</td>
-          <td class="paramname"><em>a0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V &amp;&#160;</td>
-          <td class="paramname"><em>a1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V &amp;&#160;</td>
-          <td class="paramname"><em>a2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V &amp;&#160;</td>
-          <td class="paramname"><em>a3</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="af289040314646da835af95e57412392c"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void simdpp::null::transpose8 </td>
-          <td>(</td>
-          <td class="paramtype">V &amp;&#160;</td>
-          <td class="paramname"><em>a0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V &amp;&#160;</td>
-          <td class="paramname"><em>a1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V &amp;&#160;</td>
-          <td class="paramname"><em>a2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V &amp;&#160;</td>
-          <td class="paramname"><em>a3</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V &amp;&#160;</td>
-          <td class="paramname"><em>a4</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V &amp;&#160;</td>
-          <td class="paramname"><em>a5</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V &amp;&#160;</td>
-          <td class="paramname"><em>a6</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V &amp;&#160;</td>
-          <td class="paramname"><em>a7</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aa9750ded121c4b095931fe9882b95674"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">V simdpp::null::unzip_hi </td>
-          <td>(</td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a32880b287d2890c6cd3fa01e2de8f6a2"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">V simdpp::null::unzip_lo </td>
-          <td>(</td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ac5161970a4d16ae1a8f7e0faf7cc6cfe"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">V simdpp::null::zip_hi </td>
-          <td>(</td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ae011b412c3f4c425f86bcf1f5b9b72a6"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">V simdpp::null::zip_lo </td>
-          <td>(</td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">V&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>Returns the instruction set flags that will be required by the currently compiled code. </p>
 
 </div>
 </div>
 </div><!-- contents -->
+<!-- HTML footer for doxygen 1.8.3.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 15 2013 20:49:08 for libsimdpp by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 17 2013 03:50:35 for libsimdpp by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>
+</div>
 </body>
 </html>

@@ -1,5 +1,5 @@
-<map id="simdpp::basic_int32x4" name="simdpp::basic_int32x4">
-<area shape="rect" id="node5" href="$a00018.html" title="Class representing 4x 32&#45;bit signed integer vector." alt="" coords="5,161,115,189"/>
-<area shape="rect" id="node7" href="$a00026.html" title="Class representing 4x 32&#45;bit unsigned integer vector." alt="" coords="139,161,256,189"/>
-<area shape="rect" id="node2" href="$a00014.html" title="Base class for all 128&#45;bit integer objects." alt="" coords="76,6,180,34"/>
+<map id="simdpp::basic_int32x8" name="simdpp::basic_int32x8">
+<area shape="rect" id="node5" href="$a00019.html" title="Class representing 4x 32&#45;bit signed integer vector." alt="" coords="5,161,115,189"/>
+<area shape="rect" id="node7" href="$a00027.html" title="Class representing 4x 32&#45;bit unsigned integer vector." alt="" coords="139,161,256,189"/>
+<area shape="rect" id="node2" href="$a00017.html" title="Base class for all 128&#45;bit integer objects." alt="" coords="76,6,180,34"/>
 </map>

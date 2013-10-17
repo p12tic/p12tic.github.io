@@ -1,4 +1,4 @@
-<map id="simdpp::uint16x8" name="simdpp::uint16x8">
-<area shape="rect" id="node2" href="$a00003.html" title="Generic class representing 8x 16&#45;bit integer vector." alt="" coords="5,83,152,111"/>
+<map id="simdpp::int32x4" name="simdpp::int32x4">
+<area shape="rect" id="node2" href="$a00004.html" title="Generic class representing 4x 32&#45;bit integer vector." alt="" coords="5,83,152,111"/>
 <area shape="rect" id="node4" href="$a00014.html" title="Base class for all 128&#45;bit integer objects." alt="" coords="27,6,131,34"/>
 </map>
