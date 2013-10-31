@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>libsimdpp: simdpp::ArchUserInfo Struct Reference</title>
+<title>libsimdpp: simdpp::Arch Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,7 +20,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">libsimdpp
-   &#160;<span id="projectnumber">0.9.1</span>
+   &#160;<span id="projectnumber">0.9.3</span>
    </div>
   </td>
  </tr>
@@ -48,64 +48,444 @@
   </div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00108.html">simdpp</a></li><li class="navelem"><a class="el" href="a00001.html">ArchUserInfo</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00173.html">simdpp</a></li><li class="navelem"><a class="el" href="a00001.html">Arch</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="a00135.html">List of all members</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="a00200.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">simdpp::ArchUserInfo Struct Reference<div class="ingroups"><a class="el" href="a00118.html">Dispatching support</a></div></div>  </div>
+<div class="title">simdpp::Arch Class Reference<div class="ingroups"><a class="el" href="a00184.html">Dispatching support</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Identifies user supplied information about supported instruction sets.  
+<p>Identifies supported instruction set.  
  <a href="a00001.html#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:afd25c8623f733561022094650ca2833e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00118.html#ga5335c7b7726de1a63a10b2975ad430b4">Arch</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00001.html#afd25c8623f733561022094650ca2833e">supported</a></td></tr>
-<tr class="separator:afd25c8623f733561022094650ca2833e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93891940ac418296b07b0d371b3b3cb5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00118.html#ga5335c7b7726de1a63a10b2975ad430b4">Arch</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00001.html#a93891940ac418296b07b0d371b3b3cb5">not_supported</a></td></tr>
-<tr class="separator:a93891940ac418296b07b0d371b3b3cb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a19d65b172248cce7cd28c0c53bbd538d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00001.html#a19d65b172248cce7cd28c0c53bbd538d">Arch</a> ()</td></tr>
+<tr class="separator:a19d65b172248cce7cd28c0c53bbd538d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8232ee7fd329f26c4135687dedd204de"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00001.html#a8232ee7fd329f26c4135687dedd204de">Arch</a> (T val)</td></tr>
+<tr class="separator:a8232ee7fd329f26c4135687dedd204de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af79d848257d23708cb7fbb4a3886662a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00001.html#af79d848257d23708cb7fbb4a3886662a">operator T</a> () const </td></tr>
+<tr class="separator:af79d848257d23708cb7fbb4a3886662a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a9de1488e15823c9ef057315e2070afaf"><td class="memItemLeft" align="right" valign="top">static const T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00001.html#a9de1488e15823c9ef057315e2070afaf">NONE_NULL</a> = 0</td></tr>
+<tr class="memdesc:a9de1488e15823c9ef057315e2070afaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates that no SIMD instructions are supported.  <a href="#a9de1488e15823c9ef057315e2070afaf">More...</a><br/></td></tr>
+<tr class="separator:a9de1488e15823c9ef057315e2070afaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3ca07f099097030363ae999d5164989"><td class="memItemLeft" align="right" valign="top">static const T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00001.html#aa3ca07f099097030363ae999d5164989">X86_SSE2</a> = 1 &lt;&lt; 1</td></tr>
+<tr class="memdesc:aa3ca07f099097030363ae999d5164989"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates x86 SSE2 support.  <a href="#aa3ca07f099097030363ae999d5164989">More...</a><br/></td></tr>
+<tr class="separator:aa3ca07f099097030363ae999d5164989"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a906472704dd2b199c327fb32dc8b9b67"><td class="memItemLeft" align="right" valign="top">static const T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00001.html#a906472704dd2b199c327fb32dc8b9b67">X86_SSE3</a> = 1 &lt;&lt; 2</td></tr>
+<tr class="memdesc:a906472704dd2b199c327fb32dc8b9b67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates x86 SSE3 support.  <a href="#a906472704dd2b199c327fb32dc8b9b67">More...</a><br/></td></tr>
+<tr class="separator:a906472704dd2b199c327fb32dc8b9b67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1fd5d73ada14af0e80a5042fc10246c"><td class="memItemLeft" align="right" valign="top">static const T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00001.html#ae1fd5d73ada14af0e80a5042fc10246c">X86_SSSE3</a> = 1 &lt;&lt; 3</td></tr>
+<tr class="memdesc:ae1fd5d73ada14af0e80a5042fc10246c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates x86 SSSE3 support.  <a href="#ae1fd5d73ada14af0e80a5042fc10246c">More...</a><br/></td></tr>
+<tr class="separator:ae1fd5d73ada14af0e80a5042fc10246c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e349e5e4fb1b79f2f6e198b680c2e86"><td class="memItemLeft" align="right" valign="top">static const T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00001.html#a6e349e5e4fb1b79f2f6e198b680c2e86">X86_SSE4_1</a> = 1 &lt;&lt; 4</td></tr>
+<tr class="memdesc:a6e349e5e4fb1b79f2f6e198b680c2e86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates x86 SSE4.1 support.  <a href="#a6e349e5e4fb1b79f2f6e198b680c2e86">More...</a><br/></td></tr>
+<tr class="separator:a6e349e5e4fb1b79f2f6e198b680c2e86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcfb6e1c764ec4742a8d4167e284bb83"><td class="memItemLeft" align="right" valign="top">static const T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00001.html#abcfb6e1c764ec4742a8d4167e284bb83">X86_AVX</a> = 1 &lt;&lt; 5</td></tr>
+<tr class="memdesc:abcfb6e1c764ec4742a8d4167e284bb83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates x86 AVX support.  <a href="#abcfb6e1c764ec4742a8d4167e284bb83">More...</a><br/></td></tr>
+<tr class="separator:abcfb6e1c764ec4742a8d4167e284bb83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50dd47ee90a63aeb5b0030f949c63a4a"><td class="memItemLeft" align="right" valign="top">static const T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00001.html#a50dd47ee90a63aeb5b0030f949c63a4a">X86_AVX2</a> = 1 &lt;&lt; 6</td></tr>
+<tr class="memdesc:a50dd47ee90a63aeb5b0030f949c63a4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates x86 AVX2 support.  <a href="#a50dd47ee90a63aeb5b0030f949c63a4a">More...</a><br/></td></tr>
+<tr class="separator:a50dd47ee90a63aeb5b0030f949c63a4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed95be549e1bcd99b67bb7383a503b85"><td class="memItemLeft" align="right" valign="top">static const T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00001.html#aed95be549e1bcd99b67bb7383a503b85">X86_FMA3</a> = 1 &lt;&lt; 7</td></tr>
+<tr class="memdesc:aed95be549e1bcd99b67bb7383a503b85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates x86 FMA3 (Intel) support.  <a href="#aed95be549e1bcd99b67bb7383a503b85">More...</a><br/></td></tr>
+<tr class="separator:aed95be549e1bcd99b67bb7383a503b85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f05c1d4e4d160806e0d3ebb6aa1d263"><td class="memItemLeft" align="right" valign="top">static const T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00001.html#a5f05c1d4e4d160806e0d3ebb6aa1d263">X86_FMA4</a> = 1 &lt;&lt; 8</td></tr>
+<tr class="memdesc:a5f05c1d4e4d160806e0d3ebb6aa1d263"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates x86 FMA4 (AMD) support.  <a href="#a5f05c1d4e4d160806e0d3ebb6aa1d263">More...</a><br/></td></tr>
+<tr class="separator:a5f05c1d4e4d160806e0d3ebb6aa1d263"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa54292ce7d9aefe65b5e245c0ff1249d"><td class="memItemLeft" align="right" valign="top">static const T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00001.html#aa54292ce7d9aefe65b5e245c0ff1249d">X86_XOP</a> = 1 &lt;&lt; 9</td></tr>
+<tr class="memdesc:aa54292ce7d9aefe65b5e245c0ff1249d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates x86 XOP (AMD) support.  <a href="#aa54292ce7d9aefe65b5e245c0ff1249d">More...</a><br/></td></tr>
+<tr class="separator:aa54292ce7d9aefe65b5e245c0ff1249d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad87587d3f219ed6308e964ababbfafb8"><td class="memItemLeft" align="right" valign="top">static const T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00001.html#ad87587d3f219ed6308e964ababbfafb8">ARM_NEON</a> = 1 &lt;&lt; 0</td></tr>
+<tr class="memdesc:ad87587d3f219ed6308e964ababbfafb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates ARM NEON support (SP and DP floating-point math is executed on VFP)  <a href="#ad87587d3f219ed6308e964ababbfafb8">More...</a><br/></td></tr>
+<tr class="separator:ad87587d3f219ed6308e964ababbfafb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a798120fa14b8ee838aee431bcb207a82"><td class="memItemLeft" align="right" valign="top">static const T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00001.html#a798120fa14b8ee838aee431bcb207a82">ARM_NEON_FLT_SP</a> = 1 &lt;&lt; 1</td></tr>
+<tr class="memdesc:a798120fa14b8ee838aee431bcb207a82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates ARM NEON support (SP floating-point math is executed on NEON, DP floating-point math is executed on VFP)  <a href="#a798120fa14b8ee838aee431bcb207a82">More...</a><br/></td></tr>
+<tr class="separator:a798120fa14b8ee838aee431bcb207a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6af28792320ef7e106a49291187ebbdf"><td class="memItemLeft" align="right" valign="top">static const T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00001.html#a6af28792320ef7e106a49291187ebbdf">POWER_ALTIVEC</a> = 1 &lt;&lt; 0</td></tr>
+<tr class="memdesc:a6af28792320ef7e106a49291187ebbdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates POWER ALTIVEC support.  <a href="#a6af28792320ef7e106a49291187ebbdf">More...</a><br/></td></tr>
+<tr class="separator:a6af28792320ef7e106a49291187ebbdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Identifies user supplied information about supported instruction sets. </p>
-<p>This overrides auto-detected information. </p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a93891940ac418296b07b0d371b3b3cb5"></a>
+<div class="textblock"><p>Identifies supported instruction set. </p>
+<p>This type is a bitmask type</p>
+<p>Note: the exact values may change release to release. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a19d65b172248cce7cd28c0c53bbd538d"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00118.html#ga5335c7b7726de1a63a10b2975ad430b4">Arch</a> simdpp::ArchUserInfo::not_supported</td>
+          <td class="memname">simdpp::Arch::Arch </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="afd25c8623f733561022094650ca2833e"></a>
+<a class="anchor" id="a8232ee7fd329f26c4135687dedd204de"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00118.html#ga5335c7b7726de1a63a10b2975ad430b4">Arch</a> simdpp::ArchUserInfo::supported</td>
+          <td class="memname">simdpp::Arch::Arch </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li>arch.h</li>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="af79d848257d23708cb7fbb4a3886662a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">simdpp::Arch::operator T </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="ad87587d3f219ed6308e964ababbfafb8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const T simdpp::Arch::ARM_NEON = 1 &lt;&lt; 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Indicates ARM NEON support (SP and DP floating-point math is executed on VFP) </p>
+
+</div>
+</div>
+<a class="anchor" id="a798120fa14b8ee838aee431bcb207a82"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const T simdpp::Arch::ARM_NEON_FLT_SP = 1 &lt;&lt; 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Indicates ARM NEON support (SP floating-point math is executed on NEON, DP floating-point math is executed on VFP) </p>
+
+</div>
+</div>
+<a class="anchor" id="a9de1488e15823c9ef057315e2070afaf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const T simdpp::Arch::NONE_NULL = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Indicates that no SIMD instructions are supported. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6af28792320ef7e106a49291187ebbdf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const T simdpp::Arch::POWER_ALTIVEC = 1 &lt;&lt; 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Indicates POWER ALTIVEC support. </p>
+
+</div>
+</div>
+<a class="anchor" id="abcfb6e1c764ec4742a8d4167e284bb83"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const T simdpp::Arch::X86_AVX = 1 &lt;&lt; 5</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Indicates x86 AVX support. </p>
+
+</div>
+</div>
+<a class="anchor" id="a50dd47ee90a63aeb5b0030f949c63a4a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const T simdpp::Arch::X86_AVX2 = 1 &lt;&lt; 6</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Indicates x86 AVX2 support. </p>
+
+</div>
+</div>
+<a class="anchor" id="aed95be549e1bcd99b67bb7383a503b85"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const T simdpp::Arch::X86_FMA3 = 1 &lt;&lt; 7</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Indicates x86 FMA3 (Intel) support. </p>
+
+</div>
+</div>
+<a class="anchor" id="a5f05c1d4e4d160806e0d3ebb6aa1d263"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const T simdpp::Arch::X86_FMA4 = 1 &lt;&lt; 8</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Indicates x86 FMA4 (AMD) support. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa3ca07f099097030363ae999d5164989"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const T simdpp::Arch::X86_SSE2 = 1 &lt;&lt; 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Indicates x86 SSE2 support. </p>
+
+</div>
+</div>
+<a class="anchor" id="a906472704dd2b199c327fb32dc8b9b67"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const T simdpp::Arch::X86_SSE3 = 1 &lt;&lt; 2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Indicates x86 SSE3 support. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6e349e5e4fb1b79f2f6e198b680c2e86"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const T simdpp::Arch::X86_SSE4_1 = 1 &lt;&lt; 4</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Indicates x86 SSE4.1 support. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae1fd5d73ada14af0e80a5042fc10246c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const T simdpp::Arch::X86_SSSE3 = 1 &lt;&lt; 3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Indicates x86 SSSE3 support. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa54292ce7d9aefe65b5e245c0ff1249d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const T simdpp::Arch::X86_XOP = 1 &lt;&lt; 9</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Indicates x86 XOP (AMD) support. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>dispatch/arch.h</li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.3.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 17 2013 06:13:34 for libsimdpp by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 31 2013 04:08:51 for libsimdpp by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

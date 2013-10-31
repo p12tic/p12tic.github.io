@@ -20,7 +20,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">libsimdpp
-   &#160;<span id="projectnumber">0.9.1</span>
+   &#160;<span id="projectnumber">0.9.3</span>
    </div>
   </td>
  </tr>
@@ -48,17 +48,19 @@
   </div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00108.html">simdpp</a></li><li class="navelem"><a class="el" href="a00017.html">int256</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00173.html">simdpp</a></li><li class="navelem"><a class="el" href="a00017.html">int256</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="a00154.html">List of all members</a>  </div>
+<a href="a00225.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">simdpp::int256 Class Reference<div class="ingroups"><a class="el" href="a00125.html">Types: integral vectors</a></div></div>  </div>
+<div class="title">simdpp::int256 Class Reference<div class="ingroups"><a class="el" href="a00191.html">Types: integral vectors</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -67,19 +69,28 @@
 <div class="dynheader">
 Inheritance diagram for simdpp::int256:</div>
 <div class="dyncontent">
-<div class="center"><img src="a00155.png" border="0" usemap="#simdpp_1_1int256_inherit__map" alt="Inheritance graph"/></div>
+<div class="center"><img src="a00226.png" border="0" usemap="#simdpp_1_1int256_inherit__map" alt="Inheritance graph"/></div>
 <map name="simdpp_1_1int256_inherit__map" id="simdpp_1_1int256_inherit__map">
-<area shape="rect" id="node3" href="a00002.html" title="Generic class representing 16x 16&#45;bit integer vector." alt="" coords="157,55,312,83"/><area shape="rect" id="node9" href="a00005.html" title="Generic class representing 4x 32&#45;bit integer vector." alt="" coords="161,157,308,185"/><area shape="rect" id="node15" href="a00007.html" title="Generic class representing 2x 64&#45;bit integer vector." alt="" coords="161,207,308,235"/><area shape="rect" id="node21" href="a00009.html" title="Generic class representing 16x 8&#45;bit integer vector." alt="" coords="161,309,308,337"/><area shape="rect" id="node5" href="a00015.html" title="Class representing 16x 16&#45;bit signed integer vector." alt="" coords="364,5,481,33"/><area shape="rect" id="node7" href="a00024.html" title="Class representing 8x 16&#45;bit unsigned integer vector." alt="" coords="361,55,484,83"/><area shape="rect" id="node11" href="a00019.html" title="Class representing 4x 32&#45;bit signed integer vector." alt="" coords="368,106,477,134"/><area shape="rect" id="node13" href="a00027.html" title="Class representing 4x 32&#45;bit unsigned integer vector." alt="" coords="364,157,481,185"/><area shape="rect" id="node17" href="a00021.html" title="Class representing 2x 64&#45;bit signed integer vector." alt="" coords="368,207,477,235"/><area shape="rect" id="node19" href="a00029.html" title="Class representing 2x 64&#45;bit unsigned integer vector." alt="" coords="364,258,481,286"/><area shape="rect" id="node23" href="a00023.html" title="Class representing 16x 8&#45;bit signed integer vector." alt="" coords="368,309,477,337"/><area shape="rect" id="node25" href="a00031.html" title="Class representing 16x 8&#45;bit unsigned integer vector." alt="" coords="364,359,481,387"/></map>
+<area shape="rect" id="node3" href="a00002.html" title="Generic class representing 16x 16&#45;bit integer vector." alt="" coords="157,55,312,83"/><area shape="rect" id="node9" href="a00005.html" title="Generic class representing 4x 32&#45;bit integer vector." alt="" coords="161,157,308,185"/><area shape="rect" id="node15" href="a00007.html" title="Generic class representing 2x 64&#45;bit integer vector." alt="" coords="161,207,308,235"/><area shape="rect" id="node21" href="a00009.html" title="Generic class representing 16x 8&#45;bit integer vector." alt="" coords="161,309,308,337"/><area shape="rect" id="node5" href="a00015.html" title="Class representing 16x 16&#45;bit signed integer vector." alt="" coords="364,5,481,33"/><area shape="rect" id="node7" href="a00084.html" title="Class representing 8x 16&#45;bit unsigned integer vector." alt="" coords="361,55,484,83"/><area shape="rect" id="node11" href="a00019.html" title="Class representing 4x 32&#45;bit signed integer vector." alt="" coords="368,106,477,134"/><area shape="rect" id="node13" href="a00087.html" title="Class representing 4x 32&#45;bit unsigned integer vector." alt="" coords="364,157,481,185"/><area shape="rect" id="node17" href="a00021.html" title="Class representing 2x 64&#45;bit signed integer vector." alt="" coords="368,207,477,235"/><area shape="rect" id="node19" href="a00089.html" title="Class representing 2x 64&#45;bit unsigned integer vector." alt="" coords="364,258,481,286"/><area shape="rect" id="node23" href="a00023.html" title="Class representing 16x 8&#45;bit signed integer vector." alt="" coords="368,309,477,337"/><area shape="rect" id="node25" href="a00091.html" title="Class representing 16x 8&#45;bit unsigned integer vector." alt="" coords="364,359,481,387"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:aae425ed0501178a0da4f2572071fd5b2"><td class="memItemLeft" align="right" valign="top">typedef uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#aae425ed0501178a0da4f2572071fd5b2">element_type</a></td></tr>
+<tr class="separator:aae425ed0501178a0da4f2572071fd5b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaa0251ec074bc0616ccacd8c3d7e75e"><td class="memItemLeft" align="right" valign="top">typedef uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#aaaa0251ec074bc0616ccacd8c3d7e75e">uint_element_type</a></td></tr>
+<tr class="separator:aaaa0251ec074bc0616ccacd8c3d7e75e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a400ba8865ba3d79c4a6a828c2ace4ee1"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00017.html">int256</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a400ba8865ba3d79c4a6a828c2ace4ee1">int_vector_type</a></td></tr>
+<tr class="separator:a400ba8865ba3d79c4a6a828c2ace4ee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2523b2d25bf3dcd52dc4e7b24930ff07"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a2523b2d25bf3dcd52dc4e7b24930ff07">int256</a> ()=default</td></tr>
-<tr class="separator:a2523b2d25bf3dcd52dc4e7b24930ff07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79837fa8025ae07714563d2c04529934"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a79837fa8025ae07714563d2c04529934">int256</a> (const <a class="el" href="a00017.html">int256</a> &amp;)=default</td></tr>
-<tr class="separator:a79837fa8025ae07714563d2c04529934"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a956be373c6417501fe741736efc8ed38"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00017.html">int256</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a956be373c6417501fe741736efc8ed38">operator=</a> (const <a class="el" href="a00017.html">int256</a> &amp;)=default</td></tr>
-<tr class="separator:a956be373c6417501fe741736efc8ed38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6feb44bc8c14fcc2468492feecf57fec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a6feb44bc8c14fcc2468492feecf57fec">int256</a> ()</td></tr>
+<tr class="separator:a6feb44bc8c14fcc2468492feecf57fec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7a4cccb5455da3fae1cd8abba3bf238"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#af7a4cccb5455da3fae1cd8abba3bf238">int256</a> (const <a class="el" href="a00017.html">int256</a> &amp;d)</td></tr>
+<tr class="separator:af7a4cccb5455da3fae1cd8abba3bf238"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4eed3b3860381ca417f561a18f21081a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00017.html">int256</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a4eed3b3860381ca417f561a18f21081a">operator=</a> (const <a class="el" href="a00017.html">int256</a> &amp;d)</td></tr>
+<tr class="separator:a4eed3b3860381ca417f561a18f21081a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3ca960945005e923d56195215f9cd9f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#ab3ca960945005e923d56195215f9cd9f">int256</a> (<a class="el" href="a00014.html">int128</a> d0, <a class="el" href="a00014.html">int128</a> d1)</td></tr>
 <tr class="separator:ab3ca960945005e923d56195215f9cd9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afbdf0be8487bdb44cfe21f9c8fd014dd"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00014.html">int128</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#afbdf0be8487bdb44cfe21f9c8fd014dd">operator[]</a> (unsigned i) const </td></tr>
@@ -96,23 +107,32 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:a3ea64a64e3699858b6726480b1f1ca82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a 128-bit integer vector with contents set to ones.  <a href="#a3ea64a64e3699858b6726480b1f1ca82">More...</a><br/></td></tr>
 <tr class="separator:a3ea64a64e3699858b6726480b1f1ca82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a1280fcd847317025b5f3011cb70e19f0"><td class="memItemLeft" align="right" valign="top">static const unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a1280fcd847317025b5f3011cb70e19f0">length</a> = 4</td></tr>
+<tr class="separator:a1280fcd847317025b5f3011cb70e19f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f9604136ec7cd6009232a29c7ab9c0e"><td class="memItemLeft" align="right" valign="top">static const unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a8f9604136ec7cd6009232a29c7ab9c0e">num_bits</a> = 64</td></tr>
+<tr class="separator:a8f9604136ec7cd6009232a29c7ab9c0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b5a333f63aedf7abc6585a9f5413882"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="a00017.html#aaaa0251ec074bc0616ccacd8c3d7e75e">uint_element_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a2b5a333f63aedf7abc6585a9f5413882">all_bits</a> = 0xffffffffffffffff</td></tr>
+<tr class="separator:a2b5a333f63aedf7abc6585a9f5413882"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a21b5ecc5651a11c20474b47e3b39d9f3"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00028.html">uint64x2</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a21b5ecc5651a11c20474b47e3b39d9f3">u64</a> (unsigned i) const </td></tr>
+<tr class="memitem:a21b5ecc5651a11c20474b47e3b39d9f3"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00088.html">uint64x2</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a21b5ecc5651a11c20474b47e3b39d9f3">u64</a> (unsigned i) const </td></tr>
 <tr class="separator:a21b5ecc5651a11c20474b47e3b39d9f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a539b3ccce5e28e86c2e4aa3a6a3997af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00028.html">uint64x2</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a539b3ccce5e28e86c2e4aa3a6a3997af">u64</a> (unsigned i)</td></tr>
+<tr class="memitem:a539b3ccce5e28e86c2e4aa3a6a3997af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00088.html">uint64x2</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a539b3ccce5e28e86c2e4aa3a6a3997af">u64</a> (unsigned i)</td></tr>
 <tr class="separator:a539b3ccce5e28e86c2e4aa3a6a3997af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd957c175bc190d20bed696710e596d1"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00026.html">uint32x4</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#acd957c175bc190d20bed696710e596d1">u32</a> (unsigned i) const </td></tr>
+<tr class="memitem:acd957c175bc190d20bed696710e596d1"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00086.html">uint32x4</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#acd957c175bc190d20bed696710e596d1">u32</a> (unsigned i) const </td></tr>
 <tr class="separator:acd957c175bc190d20bed696710e596d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c18ee63ef3a04b57a8db55b03598930"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00026.html">uint32x4</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a2c18ee63ef3a04b57a8db55b03598930">u32</a> (unsigned i)</td></tr>
+<tr class="memitem:a2c18ee63ef3a04b57a8db55b03598930"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00086.html">uint32x4</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a2c18ee63ef3a04b57a8db55b03598930">u32</a> (unsigned i)</td></tr>
 <tr class="separator:a2c18ee63ef3a04b57a8db55b03598930"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c697032e759ba9e9be54dbfbb2eea20"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00025.html">uint16x8</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a4c697032e759ba9e9be54dbfbb2eea20">u16</a> (unsigned i) const </td></tr>
+<tr class="memitem:a4c697032e759ba9e9be54dbfbb2eea20"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00085.html">uint16x8</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a4c697032e759ba9e9be54dbfbb2eea20">u16</a> (unsigned i) const </td></tr>
 <tr class="separator:a4c697032e759ba9e9be54dbfbb2eea20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af465c238b6c1805171ac43b4edb808e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00025.html">uint16x8</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#af465c238b6c1805171ac43b4edb808e6">u16</a> (unsigned i)</td></tr>
+<tr class="memitem:af465c238b6c1805171ac43b4edb808e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00085.html">uint16x8</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#af465c238b6c1805171ac43b4edb808e6">u16</a> (unsigned i)</td></tr>
 <tr class="separator:af465c238b6c1805171ac43b4edb808e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a531cd83630297646e5a16fa589896e6c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00030.html">uint8x16</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a531cd83630297646e5a16fa589896e6c">u8</a> (unsigned i) const </td></tr>
+<tr class="memitem:a531cd83630297646e5a16fa589896e6c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00090.html">uint8x16</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a531cd83630297646e5a16fa589896e6c">u8</a> (unsigned i) const </td></tr>
 <tr class="separator:a531cd83630297646e5a16fa589896e6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a190bf975f62d37940c9282e354aa74cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00030.html">uint8x16</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a190bf975f62d37940c9282e354aa74cd">u8</a> (unsigned i)</td></tr>
+<tr class="memitem:a190bf975f62d37940c9282e354aa74cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00090.html">uint8x16</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a190bf975f62d37940c9282e354aa74cd">u8</a> (unsigned i)</td></tr>
 <tr class="separator:a190bf975f62d37940c9282e354aa74cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09d2269671d9decfbd0c0c3deb2f5464"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00020.html">int64x2</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00017.html#a09d2269671d9decfbd0c0c3deb2f5464">i64</a> (unsigned i) const </td></tr>
 <tr class="separator:a09d2269671d9decfbd0c0c3deb2f5464"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -133,8 +153,45 @@ Protected Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for all 128-bit integer objects. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a2523b2d25bf3dcd52dc4e7b24930ff07"></a>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="aae425ed0501178a0da4f2572071fd5b2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef uint64_t <a class="el" href="a00017.html#aae425ed0501178a0da4f2572071fd5b2">simdpp::int256::element_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a400ba8865ba3d79c4a6a828c2ace4ee1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a00017.html">int256</a> <a class="el" href="a00017.html#a400ba8865ba3d79c4a6a828c2ace4ee1">simdpp::int256::int_vector_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aaaa0251ec074bc0616ccacd8c3d7e75e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef uint64_t <a class="el" href="a00017.html#aaaa0251ec074bc0616ccacd8c3d7e75e">simdpp::int256::uint_element_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a6feb44bc8c14fcc2468492feecf57fec"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -150,14 +207,14 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a79837fa8025ae07714563d2c04529934"></a>
+<a class="anchor" id="af7a4cccb5455da3fae1cd8abba3bf238"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -168,13 +225,13 @@ Protected Member Functions</h2></td></tr>
           <td class="memname">simdpp::int256::int256 </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="a00017.html">int256</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -435,7 +492,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- fragment --> 
 </div>
 </div>
-<a class="anchor" id="a956be373c6417501fe741736efc8ed38"></a>
+<a class="anchor" id="a4eed3b3860381ca417f561a18f21081a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -446,13 +503,13 @@ Protected Member Functions</h2></td></tr>
           <td class="memname"><a class="el" href="a00017.html">int256</a>&amp; simdpp::int256::operator= </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="a00017.html">int256</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -515,7 +572,7 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="a00025.html">uint16x8</a>&amp; simdpp::int256::u16 </td>
+          <td class="memname">const <a class="el" href="a00085.html">uint16x8</a>&amp; simdpp::int256::u16 </td>
           <td>(</td>
           <td class="paramtype">unsigned&#160;</td>
           <td class="paramname"><em>i</em></td><td>)</td>
@@ -539,7 +596,7 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00025.html">uint16x8</a>&amp; simdpp::int256::u16 </td>
+          <td class="memname"><a class="el" href="a00085.html">uint16x8</a>&amp; simdpp::int256::u16 </td>
           <td>(</td>
           <td class="paramtype">unsigned&#160;</td>
           <td class="paramname"><em>i</em></td><td>)</td>
@@ -563,7 +620,7 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="a00026.html">uint32x4</a>&amp; simdpp::int256::u32 </td>
+          <td class="memname">const <a class="el" href="a00086.html">uint32x4</a>&amp; simdpp::int256::u32 </td>
           <td>(</td>
           <td class="paramtype">unsigned&#160;</td>
           <td class="paramname"><em>i</em></td><td>)</td>
@@ -587,7 +644,7 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00026.html">uint32x4</a>&amp; simdpp::int256::u32 </td>
+          <td class="memname"><a class="el" href="a00086.html">uint32x4</a>&amp; simdpp::int256::u32 </td>
           <td>(</td>
           <td class="paramtype">unsigned&#160;</td>
           <td class="paramname"><em>i</em></td><td>)</td>
@@ -611,7 +668,7 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="a00028.html">uint64x2</a>&amp; simdpp::int256::u64 </td>
+          <td class="memname">const <a class="el" href="a00088.html">uint64x2</a>&amp; simdpp::int256::u64 </td>
           <td>(</td>
           <td class="paramtype">unsigned&#160;</td>
           <td class="paramname"><em>i</em></td><td>)</td>
@@ -635,7 +692,7 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00028.html">uint64x2</a>&amp; simdpp::int256::u64 </td>
+          <td class="memname"><a class="el" href="a00088.html">uint64x2</a>&amp; simdpp::int256::u64 </td>
           <td>(</td>
           <td class="paramtype">unsigned&#160;</td>
           <td class="paramname"><em>i</em></td><td>)</td>
@@ -659,7 +716,7 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="a00030.html">uint8x16</a>&amp; simdpp::int256::u8 </td>
+          <td class="memname">const <a class="el" href="a00090.html">uint8x16</a>&amp; simdpp::int256::u8 </td>
           <td>(</td>
           <td class="paramtype">unsigned&#160;</td>
           <td class="paramname"><em>i</em></td><td>)</td>
@@ -683,7 +740,7 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00030.html">uint8x16</a>&amp; simdpp::int256::u8 </td>
+          <td class="memname"><a class="el" href="a00090.html">uint8x16</a>&amp; simdpp::int256::u8 </td>
           <td>(</td>
           <td class="paramtype">unsigned&#160;</td>
           <td class="paramname"><em>i</em></td><td>)</td>
@@ -726,110 +783,62 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="aff486e620767881ccae7df1522f7524b"></a>
+<a class="anchor" id="a2b5a333f63aedf7abc6585a9f5413882"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00014.html">int128</a> simdpp::int256::d_[2]</td>
+          <td class="memname">const <a class="el" href="a00017.html#aaaa0251ec074bc0616ccacd8c3d7e75e">uint_element_type</a> simdpp::int256::all_bits = 0xffffffffffffffff</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="af8a8a9f810c6ab9605e4fd0cb13b91a0"></a>
+<a class="anchor" id="a1280fcd847317025b5f3011cb70e19f0"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00016.html">int16x8</a> simdpp::int256::i16_[2]</td>
+          <td class="memname">const unsigned simdpp::int256::length = 4</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="aa866b216d5f580d094afb5eaa6692572"></a>
+<a class="anchor" id="a8f9604136ec7cd6009232a29c7ab9c0e"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00018.html">int32x4</a> simdpp::int256::i32_[2]</td>
+          <td class="memname">const unsigned simdpp::int256::num_bits = 64</td>
         </tr>
       </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="af76ec86c5f4fb6ed5a4824386b2aae4a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00020.html">int64x2</a> simdpp::int256::i64_[2]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a4a7855e3c1e15f514e56b73abeae1b1b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00022.html">int8x16</a> simdpp::int256::i8_[2]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a98bf8b1444b8daad6bf332472dbc5156"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00025.html">uint16x8</a> simdpp::int256::u16_[2]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aeb3010deadd96aada8a4bd05c4b35367"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00026.html">uint32x4</a> simdpp::int256::u32_[2]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a190582462e54fb102d118ca0765b54a2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00028.html">uint64x2</a> simdpp::int256::u64_[2]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a223cbb754ca56121a261dda2b405f286"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00030.html">uint8x16</a> simdpp::int256::u8_[2]</td>
-        </tr>
-      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -841,7 +850,7 @@ Protected Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.3.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 17 2013 06:13:34 for libsimdpp by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 31 2013 04:08:51 for libsimdpp by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

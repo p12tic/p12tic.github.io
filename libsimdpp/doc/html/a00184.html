@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>libsimdpp: Member List</title>
+<title>libsimdpp: Dispatching support</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,7 +20,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">libsimdpp
-   &#160;<span id="projectnumber">0.9.1</span>
+   &#160;<span id="projectnumber">0.9.3</span>
    </div>
   </td>
  </tr>
@@ -35,58 +35,267 @@
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
-      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
     </ul>
   </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
-      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
-      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
-    </ul>
-  </div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="a00108.html">simdpp</a></li><li class="navelem"><a class="el" href="a00030.html">uint8x16</a></li>  </ul>
-</div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">simdpp::uint8x16 Member List</div>  </div>
+<div class="title">Dispatching support</div>  </div>
 </div><!--header-->
 <div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00001.html">simdpp::Arch</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identifies supported instruction set.  <a href="a00001.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ga1ff8aa12c930931b85fe288941f60ae6"><td class="memItemLeft" align="right" valign="top">typedef boost::function&lt; Arch()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00184.html#ga1ff8aa12c930931b85fe288941f60ae6">simdpp::GetArchCb</a></td></tr>
+<tr class="separator:ga1ff8aa12c930931b85fe288941f60ae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga76a7e1d9682d0b80ae217d881ebd4b56"><td class="memItemLeft" align="right" valign="top">Arch&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00184.html#ga76a7e1d9682d0b80ae217d881ebd4b56">simdpp::this_compile_arch</a> ()</td></tr>
+<tr class="memdesc:ga76a7e1d9682d0b80ae217d881ebd4b56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the instruction set flags that will be required by the currently compiled code.  <a href="#ga76a7e1d9682d0b80ae217d881ebd4b56">More...</a><br/></td></tr>
+<tr class="separator:ga76a7e1d9682d0b80ae217d881ebd4b56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaccd069283aa674f25a0223e797465acc"><td class="memItemLeft" align="right" valign="top">Arch &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00184.html#gaccd069283aa674f25a0223e797465acc">simdpp::operator|=</a> (Arch &amp;x, const Arch &amp;y)</td></tr>
+<tr class="memdesc:gaccd069283aa674f25a0223e797465acc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitwise operators for <code><a class="el" href="a00001.html" title="Identifies supported instruction set.">Arch</a></code>.  <a href="#gaccd069283aa674f25a0223e797465acc">More...</a><br/></td></tr>
+<tr class="separator:gaccd069283aa674f25a0223e797465acc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga393c6361b34c2e4d4bd1d8474dd4d140"><td class="memItemLeft" align="right" valign="top">Arch &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00184.html#ga393c6361b34c2e4d4bd1d8474dd4d140">simdpp::operator&amp;=</a> (Arch &amp;x, const Arch &amp;y)</td></tr>
+<tr class="memdesc:ga393c6361b34c2e4d4bd1d8474dd4d140"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitwise operators for <code><a class="el" href="a00001.html" title="Identifies supported instruction set.">Arch</a></code>.  <a href="#ga393c6361b34c2e4d4bd1d8474dd4d140">More...</a><br/></td></tr>
+<tr class="separator:ga393c6361b34c2e4d4bd1d8474dd4d140"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae65f225594866cec403804180c1a80b8"><td class="memItemLeft" align="right" valign="top">Arch&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00184.html#gae65f225594866cec403804180c1a80b8">simdpp::operator|</a> (const Arch &amp;x, const Arch &amp;y)</td></tr>
+<tr class="memdesc:gae65f225594866cec403804180c1a80b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitwise operators for <code><a class="el" href="a00001.html" title="Identifies supported instruction set.">Arch</a></code>.  <a href="#gae65f225594866cec403804180c1a80b8">More...</a><br/></td></tr>
+<tr class="separator:gae65f225594866cec403804180c1a80b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae46de53d24834d2e128098807a5e3ad6"><td class="memItemLeft" align="right" valign="top">Arch&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00184.html#gae46de53d24834d2e128098807a5e3ad6">simdpp::operator&amp;</a> (const Arch &amp;x, const Arch &amp;y)</td></tr>
+<tr class="memdesc:gae46de53d24834d2e128098807a5e3ad6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitwise operators for <code><a class="el" href="a00001.html" title="Identifies supported instruction set.">Arch</a></code>.  <a href="#gae46de53d24834d2e128098807a5e3ad6">More...</a><br/></td></tr>
+<tr class="separator:gae46de53d24834d2e128098807a5e3ad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga492daf1de430083aa9b8810975fb0839"><td class="memItemLeft" align="right" valign="top">Arch&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00184.html#ga492daf1de430083aa9b8810975fb0839">simdpp::operator~</a> (const Arch &amp;x)</td></tr>
+<tr class="memdesc:ga492daf1de430083aa9b8810975fb0839"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitwise operators for <code><a class="el" href="a00001.html" title="Identifies supported instruction set.">Arch</a></code>.  <a href="#ga492daf1de430083aa9b8810975fb0839">More...</a><br/></td></tr>
+<tr class="separator:ga492daf1de430083aa9b8810975fb0839"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a class="anchor" id="ga1ff8aa12c930931b85fe288941f60ae6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef boost::function&lt;Arch()&gt; <a class="el" href="a00184.html#ga1ff8aa12c930931b85fe288941f60ae6">simdpp::GetArchCb</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
-<p>This is the complete list of members for <a class="el" href="a00030.html">simdpp::uint8x16</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a00008.html#a953d440195af0c10c0f20c1ee92049bc">basic_int8x16</a>()=default</td><td class="entry"><a class="el" href="a00008.html">simdpp::basic_int8x16</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a00008.html#a25050493be1a5b1741355be31e9569ba">basic_int8x16</a>(const basic_int8x16 &amp;)=default</td><td class="entry"><a class="el" href="a00008.html">simdpp::basic_int8x16</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00008.html#ad1073bcb2a44d7c41e698d4f2f2b8c37">basic_int8x16</a>(const int128 &amp;d)</td><td class="entry"><a class="el" href="a00008.html">simdpp::basic_int8x16</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a00014.html#a82f1ce3b997e62e46dd9c918dbcfb3fc">int128</a>()=default</td><td class="entry"><a class="el" href="a00014.html">simdpp::int128</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00014.html#ac4a1c5297596f69add70d17d584c5a91">int128</a>(const int128 &amp;)=default</td><td class="entry"><a class="el" href="a00014.html">simdpp::int128</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a00030.html#a8acf4b78a09a88c17ff8d9aab9abe0f1">load_broadcast</a>(const uint8_t *v0)</td><td class="entry"><a class="el" href="a00030.html">simdpp::uint8x16</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00030.html#ad2881282306fd0d3f07b95a762c07a65">make_const</a>(uint8_t v0)</td><td class="entry"><a class="el" href="a00030.html">simdpp::uint8x16</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a00030.html#ab5c53eca5f555064597c339ebd6f55e2">make_const</a>(uint8_t v0, uint8_t v1)</td><td class="entry"><a class="el" href="a00030.html">simdpp::uint8x16</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00030.html#a3f28eca0d4e70399705632a6a715ca0c">make_const</a>(uint8_t v0, uint8_t v1, uint8_t v2, uint8_t v3)</td><td class="entry"><a class="el" href="a00030.html">simdpp::uint8x16</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a00030.html#ab757d3a68673bf432d7b81d18d8c646e">make_const</a>(uint8_t v0, uint8_t v1, uint8_t v2, uint8_t v3, uint8_t v4, uint8_t v5, uint8_t v6, uint8_t v7)</td><td class="entry"><a class="el" href="a00030.html">simdpp::uint8x16</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00030.html#a8f4ee9729f3cf5b67ade52308b892799">make_const</a>(uint8_t v0, uint8_t v1, uint8_t v2, uint8_t v3, uint8_t v4, uint8_t v5, uint8_t v6, uint8_t v7, uint8_t v8, uint8_t v9, uint8_t v10, uint8_t v11, uint8_t v12, uint8_t v13, uint8_t v14, uint8_t v15)</td><td class="entry"><a class="el" href="a00030.html">simdpp::uint8x16</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a00014.html#a7e61b93e3e13f0f793ede6b681b71968">ones</a>()</td><td class="entry"><a class="el" href="a00014.html">simdpp::int128</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00030.html#af606f5c52ee5e07f61d7a40c61e8b9aa">operator=</a>(const uint8x16 &amp;)=default</td><td class="entry"><a class="el" href="a00030.html">simdpp::uint8x16</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a00030.html#a43cf4b5923ad36db9711dadddbd52baf">operator=</a>(int128 d)</td><td class="entry"><a class="el" href="a00030.html">simdpp::uint8x16</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00030.html#a6b58917c9e7b5cda3256bf9ce94e3873">operator=</a>(basic_int8x16 d)</td><td class="entry"><a class="el" href="a00030.html">simdpp::uint8x16</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a00008.html#a59fbd639d0fe3a6f5b6077df63739a59">simdpp::basic_int8x16::operator=</a>(const basic_int8x16 &amp;)=default</td><td class="entry"><a class="el" href="a00008.html">simdpp::basic_int8x16</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00008.html#abc828063998d6af740f60a79f6b3b8d6">simdpp::basic_int8x16::operator=</a>(const int128 &amp;d)</td><td class="entry"><a class="el" href="a00008.html">simdpp::basic_int8x16</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a00030.html#ac9b4c3aee0f73750758214dbe6bee489">set_broadcast</a>(uint8_t v0)</td><td class="entry"><a class="el" href="a00030.html">simdpp::uint8x16</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00030.html#ad5e1de49033f9b0d3c60078d929edd38">uint8x16</a>()=default</td><td class="entry"><a class="el" href="a00030.html">simdpp::uint8x16</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a00030.html#adeac3ab733b3e8b57eec23010f12abc6">uint8x16</a>(const uint8x16 &amp;)=default</td><td class="entry"><a class="el" href="a00030.html">simdpp::uint8x16</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00030.html#a4794ea433aba5300b55792600feea1be">uint8x16</a>(const int128 &amp;d)</td><td class="entry"><a class="el" href="a00030.html">simdpp::uint8x16</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a00030.html#aabc066b50726d2b4f674f27c4e1408a8">uint8x16</a>(const basic_int8x16 &amp;d)</td><td class="entry"><a class="el" href="a00030.html">simdpp::uint8x16</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00030.html#a94c89890e2292ae6812e000c32281046">zero</a>()</td><td class="entry"><a class="el" href="a00030.html">simdpp::uint8x16</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-</table></div><!-- contents -->
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="gae46de53d24834d2e128098807a5e3ad6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Arch simdpp::operator&amp; </td>
+          <td>(</td>
+          <td class="paramtype">const Arch &amp;&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Arch &amp;&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Bitwise operators for <code><a class="el" href="a00001.html" title="Identifies supported instruction set.">Arch</a></code>. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga393c6361b34c2e4d4bd1d8474dd4d140"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Arch&amp; simdpp::operator&amp;= </td>
+          <td>(</td>
+          <td class="paramtype">Arch &amp;&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Arch &amp;&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Bitwise operators for <code><a class="el" href="a00001.html" title="Identifies supported instruction set.">Arch</a></code>. </p>
+
+</div>
+</div>
+<a class="anchor" id="gae65f225594866cec403804180c1a80b8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Arch simdpp::operator| </td>
+          <td>(</td>
+          <td class="paramtype">const Arch &amp;&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Arch &amp;&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Bitwise operators for <code><a class="el" href="a00001.html" title="Identifies supported instruction set.">Arch</a></code>. </p>
+
+</div>
+</div>
+<a class="anchor" id="gaccd069283aa674f25a0223e797465acc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Arch&amp; simdpp::operator|= </td>
+          <td>(</td>
+          <td class="paramtype">Arch &amp;&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Arch &amp;&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Bitwise operators for <code><a class="el" href="a00001.html" title="Identifies supported instruction set.">Arch</a></code>. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga492daf1de430083aa9b8810975fb0839"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Arch simdpp::operator~ </td>
+          <td>(</td>
+          <td class="paramtype">const Arch &amp;&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Bitwise operators for <code><a class="el" href="a00001.html" title="Identifies supported instruction set.">Arch</a></code>. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga76a7e1d9682d0b80ae217d881ebd4b56"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Arch simdpp::this_compile_arch </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the instruction set flags that will be required by the currently compiled code. </p>
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.3.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 17 2013 06:13:34 for libsimdpp by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 31 2013 04:08:50 for libsimdpp by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

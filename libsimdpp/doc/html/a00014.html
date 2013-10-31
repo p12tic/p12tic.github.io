@@ -20,7 +20,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">libsimdpp
-   &#160;<span id="projectnumber">0.9.1</span>
+   &#160;<span id="projectnumber">0.9.3</span>
    </div>
   </td>
  </tr>
@@ -48,16 +48,18 @@
   </div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00108.html">simdpp</a></li><li class="navelem"><a class="el" href="a00014.html">int128</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00173.html">simdpp</a></li><li class="navelem"><a class="el" href="a00014.html">int128</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="a00140.html">List of all members</a>  </div>
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="a00209.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">simdpp::int128 Class Reference<div class="ingroups"><a class="el" href="a00125.html">Types: integral vectors</a></div></div>  </div>
+<div class="title">simdpp::int128 Class Reference<div class="ingroups"><a class="el" href="a00191.html">Types: integral vectors</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -66,19 +68,28 @@
 <div class="dynheader">
 Inheritance diagram for simdpp::int128:</div>
 <div class="dyncontent">
-<div class="center"><img src="a00141.png" border="0" usemap="#simdpp_1_1int128_inherit__map" alt="Inheritance graph"/></div>
+<div class="center"><img src="a00210.png" border="0" usemap="#simdpp_1_1int128_inherit__map" alt="Inheritance graph"/></div>
 <map name="simdpp_1_1int128_inherit__map" id="simdpp_1_1int128_inherit__map">
-<area shape="rect" id="node3" href="a00003.html" title="Generic class representing 8x 16&#45;bit integer vector." alt="" coords="157,55,304,83"/><area shape="rect" id="node9" href="a00004.html" title="Generic class representing 4x 32&#45;bit integer vector." alt="" coords="157,157,304,185"/><area shape="rect" id="node15" href="a00006.html" title="Generic class representing 2x 64&#45;bit integer vector." alt="" coords="157,207,304,235"/><area shape="rect" id="node21" href="a00008.html" title="Generic class representing 16x 8&#45;bit integer vector." alt="" coords="157,309,304,337"/><area shape="rect" id="node5" href="a00016.html" title="Class representing 8x 16&#45;bit signed integer vector." alt="" coords="356,5,465,33"/><area shape="rect" id="node7" href="a00025.html" title="Class representing 8x 16&#45;bit unsigned integer vector." alt="" coords="352,55,469,83"/><area shape="rect" id="node11" href="a00018.html" title="Class representing 4x 32&#45;bit signed integer vector." alt="" coords="356,106,465,134"/><area shape="rect" id="node13" href="a00026.html" title="Class representing 4x 32&#45;bit unsigned integer vector." alt="" coords="352,157,469,185"/><area shape="rect" id="node17" href="a00020.html" title="Class representing 2x 64&#45;bit signed integer vector." alt="" coords="356,207,465,235"/><area shape="rect" id="node19" href="a00028.html" title="Class representing 2x 64&#45;bit unsigned integer vector." alt="" coords="352,258,469,286"/><area shape="rect" id="node23" href="a00022.html" title="Class representing 16x 8&#45;bit signed integer vector." alt="" coords="356,309,465,337"/><area shape="rect" id="node25" href="a00030.html" title="Class representing 16x 8&#45;bit unsigned integer vector." alt="" coords="352,359,469,387"/></map>
+<area shape="rect" id="node3" href="a00003.html" title="Generic class representing 8x 16&#45;bit integer vector." alt="" coords="157,55,304,83"/><area shape="rect" id="node9" href="a00004.html" title="Generic class representing 4x 32&#45;bit integer vector." alt="" coords="157,157,304,185"/><area shape="rect" id="node15" href="a00006.html" title="Generic class representing 2x 64&#45;bit integer vector." alt="" coords="157,207,304,235"/><area shape="rect" id="node21" href="a00008.html" title="Generic class representing 16x 8&#45;bit integer vector." alt="" coords="157,309,304,337"/><area shape="rect" id="node5" href="a00016.html" title="Class representing 8x 16&#45;bit signed integer vector." alt="" coords="356,5,465,33"/><area shape="rect" id="node7" href="a00085.html" title="Class representing 8x 16&#45;bit unsigned integer vector." alt="" coords="352,55,469,83"/><area shape="rect" id="node11" href="a00018.html" title="Class representing 4x 32&#45;bit signed integer vector." alt="" coords="356,106,465,134"/><area shape="rect" id="node13" href="a00086.html" title="Class representing 4x 32&#45;bit unsigned integer vector." alt="" coords="352,157,469,185"/><area shape="rect" id="node17" href="a00020.html" title="Class representing 2x 64&#45;bit signed integer vector." alt="" coords="356,207,465,235"/><area shape="rect" id="node19" href="a00088.html" title="Class representing 2x 64&#45;bit unsigned integer vector." alt="" coords="352,258,469,286"/><area shape="rect" id="node23" href="a00022.html" title="Class representing 16x 8&#45;bit signed integer vector." alt="" coords="356,309,465,337"/><area shape="rect" id="node25" href="a00090.html" title="Class representing 16x 8&#45;bit unsigned integer vector." alt="" coords="352,359,469,387"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a45b94e6fbe223b051487c977126a4f0f"><td class="memItemLeft" align="right" valign="top">typedef uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00014.html#a45b94e6fbe223b051487c977126a4f0f">element_type</a></td></tr>
+<tr class="separator:a45b94e6fbe223b051487c977126a4f0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a036e0c857d960dd5825e0a770c841898"><td class="memItemLeft" align="right" valign="top">typedef uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00014.html#a036e0c857d960dd5825e0a770c841898">uint_element_type</a></td></tr>
+<tr class="separator:a036e0c857d960dd5825e0a770c841898"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47ffa8b154ccd9917a06971fb5053fa0"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00014.html">int128</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00014.html#a47ffa8b154ccd9917a06971fb5053fa0">int_vector_type</a></td></tr>
+<tr class="separator:a47ffa8b154ccd9917a06971fb5053fa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a82f1ce3b997e62e46dd9c918dbcfb3fc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00014.html#a82f1ce3b997e62e46dd9c918dbcfb3fc">int128</a> ()=default</td></tr>
-<tr class="separator:a82f1ce3b997e62e46dd9c918dbcfb3fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4a1c5297596f69add70d17d584c5a91"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00014.html#ac4a1c5297596f69add70d17d584c5a91">int128</a> (const <a class="el" href="a00014.html">int128</a> &amp;)=default</td></tr>
-<tr class="separator:ac4a1c5297596f69add70d17d584c5a91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48d717d8539fa6a272bfda2aa2840bad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00014.html">int128</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00014.html#a48d717d8539fa6a272bfda2aa2840bad">operator=</a> (const <a class="el" href="a00014.html">int128</a> &amp;)=default</td></tr>
-<tr class="separator:a48d717d8539fa6a272bfda2aa2840bad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84629e4f4382cf4fd7b91480af5f007a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00014.html#a84629e4f4382cf4fd7b91480af5f007a">int128</a> ()</td></tr>
+<tr class="separator:a84629e4f4382cf4fd7b91480af5f007a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a664c1dd17e9160e9d5365cdc94c9a18b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00014.html#a664c1dd17e9160e9d5365cdc94c9a18b">int128</a> (const <a class="el" href="a00014.html">int128</a> &amp;d)</td></tr>
+<tr class="separator:a664c1dd17e9160e9d5365cdc94c9a18b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0809a2106526ac0979e1742a3c4b313c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00014.html">int128</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00014.html#a0809a2106526ac0979e1742a3c4b313c">operator=</a> (const <a class="el" href="a00014.html">int128</a> &amp;d)</td></tr>
+<tr class="separator:a0809a2106526ac0979e1742a3c4b313c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -88,11 +99,57 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a7e61b93e3e13f0f793ede6b681b71968"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00014.html">int128</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00014.html#a7e61b93e3e13f0f793ede6b681b71968">ones</a> ()</td></tr>
 <tr class="memdesc:a7e61b93e3e13f0f793ede6b681b71968"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a 128-bit integer vector with contents set to ones.  <a href="#a7e61b93e3e13f0f793ede6b681b71968">More...</a><br/></td></tr>
 <tr class="separator:a7e61b93e3e13f0f793ede6b681b71968"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a5f51fb71557a11bb86f5d9b1b274abe8"><td class="memItemLeft" align="right" valign="top">static const unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00014.html#a5f51fb71557a11bb86f5d9b1b274abe8">length</a> = 2</td></tr>
+<tr class="separator:a5f51fb71557a11bb86f5d9b1b274abe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d2dd6dc53c63d791c217800b37c5b8b"><td class="memItemLeft" align="right" valign="top">static const unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00014.html#a9d2dd6dc53c63d791c217800b37c5b8b">num_bits</a> = 64</td></tr>
+<tr class="separator:a9d2dd6dc53c63d791c217800b37c5b8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65b27c6e0322f4783ff260c7622b16bf"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="a00014.html#a036e0c857d960dd5825e0a770c841898">uint_element_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00014.html#a65b27c6e0322f4783ff260c7622b16bf">all_bits</a> = 0xffffffffffffffff</td></tr>
+<tr class="separator:a65b27c6e0322f4783ff260c7622b16bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for all 128-bit integer objects. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a82f1ce3b997e62e46dd9c918dbcfb3fc"></a>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="a45b94e6fbe223b051487c977126a4f0f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef uint64_t <a class="el" href="a00014.html#a45b94e6fbe223b051487c977126a4f0f">simdpp::int128::element_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a47ffa8b154ccd9917a06971fb5053fa0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a00014.html">int128</a> <a class="el" href="a00014.html#a47ffa8b154ccd9917a06971fb5053fa0">simdpp::int128::int_vector_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a036e0c857d960dd5825e0a770c841898"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef uint64_t <a class="el" href="a00014.html#a036e0c857d960dd5825e0a770c841898">simdpp::int128::uint_element_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a84629e4f4382cf4fd7b91480af5f007a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -108,14 +165,14 @@ Static Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="ac4a1c5297596f69add70d17d584c5a91"></a>
+<a class="anchor" id="a664c1dd17e9160e9d5365cdc94c9a18b"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -126,13 +183,13 @@ Static Public Member Functions</h2></td></tr>
           <td class="memname">simdpp::int128::int128 </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="a00014.html">int128</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -166,7 +223,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- fragment --> 
 </div>
 </div>
-<a class="anchor" id="a48d717d8539fa6a272bfda2aa2840bad"></a>
+<a class="anchor" id="a0809a2106526ac0979e1742a3c4b313c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -177,13 +234,13 @@ Static Public Member Functions</h2></td></tr>
           <td class="memname"><a class="el" href="a00014.html">int128</a>&amp; simdpp::int128::operator= </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="a00014.html">int128</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -212,9 +269,70 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Creates a 128-bit integer vector with the contents set to zero. </p>
-<p>Construct from the underlying vector type Convert to underlying vector type Convert to compatible 128-bit vector type</p>
+<p>Construct from the underlying vector type Convert to underlying vector type</p>
 <div class="fragment"><div class="line">a[0..127] = 0</div>
 </div><!-- fragment --> 
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a65b27c6e0322f4783ff260c7622b16bf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a00014.html#a036e0c857d960dd5825e0a770c841898">uint_element_type</a> simdpp::int128::all_bits = 0xffffffffffffffff</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5f51fb71557a11bb86f5d9b1b274abe8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned simdpp::int128::length = 2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9d2dd6dc53c63d791c217800b37c5b8b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned simdpp::int128::num_bits = 64</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -224,7 +342,7 @@ Static Public Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.3.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 17 2013 06:13:34 for libsimdpp by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 31 2013 04:08:51 for libsimdpp by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

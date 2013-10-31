@@ -1,0 +1,14 @@
+<map id="simdpp::int128" name="simdpp::int128">
+<area shape="rect" id="node3" href="$a00003.html" title="Generic class representing 8x 16&#45;bit integer vector." alt="" coords="157,55,304,83"/>
+<area shape="rect" id="node9" href="$a00004.html" title="Generic class representing 4x 32&#45;bit integer vector." alt="" coords="157,157,304,185"/>
+<area shape="rect" id="node15" href="$a00006.html" title="Generic class representing 2x 64&#45;bit integer vector." alt="" coords="157,207,304,235"/>
+<area shape="rect" id="node21" href="$a00008.html" title="Generic class representing 16x 8&#45;bit integer vector." alt="" coords="157,309,304,337"/>
+<area shape="rect" id="node5" href="$a00016.html" title="Class representing 8x 16&#45;bit signed integer vector." alt="" coords="356,5,465,33"/>
+<area shape="rect" id="node7" href="$a00085.html" title="Class representing 8x 16&#45;bit unsigned integer vector." alt="" coords="352,55,469,83"/>
+<area shape="rect" id="node11" href="$a00018.html" title="Class representing 4x 32&#45;bit signed integer vector." alt="" coords="356,106,465,134"/>
+<area shape="rect" id="node13" href="$a00086.html" title="Class representing 4x 32&#45;bit unsigned integer vector." alt="" coords="352,157,469,185"/>
+<area shape="rect" id="node17" href="$a00020.html" title="Class representing 2x 64&#45;bit signed integer vector." alt="" coords="356,207,465,235"/>
+<area shape="rect" id="node19" href="$a00088.html" title="Class representing 2x 64&#45;bit unsigned integer vector." alt="" coords="352,258,469,286"/>
+<area shape="rect" id="node23" href="$a00022.html" title="Class representing 16x 8&#45;bit signed integer vector." alt="" coords="356,309,465,337"/>
+<area shape="rect" id="node25" href="$a00090.html" title="Class representing 16x 8&#45;bit unsigned integer vector." alt="" coords="352,359,469,387"/>
+</map>
