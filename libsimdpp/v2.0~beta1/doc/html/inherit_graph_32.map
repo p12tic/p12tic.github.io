@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$a00018.html" title="simdpp::any_vec\&lt; N\l *4, uint32\&lt; 4, void \&gt; \&gt;" alt="" coords="5,5,155,49"/>
+<area shape="rect" id="node3" href="$a00015.html" title="simdpp::any_vec32\&lt;\l N, uint32\&lt; 4, void \&gt; \&gt;" alt="" coords="203,5,349,49"/>
+<area shape="rect" id="node5" href="$a00011.html" title="simdpp::any_int32\&lt;\l 4, uint32\&lt; 4, void \&gt; \&gt;" alt="" coords="397,5,541,49"/>
+<area shape="rect" id="node7" href="$a00128.html" title="Class representing 4x 32&#45;bit unsigned integer vector. " alt="" coords="591,5,716,49"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$a00018.html" title="simdpp::any_vec\&lt; N\l *2, mask_int16\&lt; 16,\l void \&gt; \&gt;" alt="" coords="5,5,144,65"/>
+<area shape="rect" id="node3" href="$a00014.html" title="simdpp::any_vec16\&lt;\l N, mask_int16\&lt; 16,\l void \&gt; \&gt;" alt="" coords="192,5,331,65"/>
+<area shape="rect" id="node5" href="$a00010.html" title="simdpp::any_int16\&lt;\l 16, mask_int16\&lt; 16,\l void \&gt; \&gt;" alt="" coords="379,5,520,65"/>
+<area shape="rect" id="node7" href="$a00111.html" title="Class representing possibly optimized mask data for 8x 16&#45;bit integer vector. " alt="" coords="569,13,703,57"/>
+</map>

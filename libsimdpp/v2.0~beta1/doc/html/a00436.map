@@ -1,0 +1,12 @@
+<map id="simdpp::expr_vec_construct&lt; E &gt;" name="simdpp::expr_vec_construct&lt; E &gt;">
+<area shape="rect" id="node3" href="$a00019.html" title="simdpp::expr_vec_construct\l\&lt; expr_vec_set_splat\&lt; VE \&gt; \&gt;" alt="" coords="427,5,616,49"/>
+<area shape="rect" id="node7" href="$a00019.html" title="simdpp::expr_vec_construct\l\&lt; expr_vec_load_u \&gt;" alt="" coords="432,71,611,115"/>
+<area shape="rect" id="node11" href="$a00019.html" title="simdpp::expr_vec_construct\l\&lt; expr_vec_make_const\&lt; VE, N \&gt; \&gt;" alt="" coords="408,138,635,182"/>
+<area shape="rect" id="node15" href="$a00019.html" title="simdpp::expr_vec_construct\l\&lt; expr_vec_load_splat \&gt;" alt="" coords="432,205,611,249"/>
+<area shape="rect" id="node19" href="$a00019.html" title="simdpp::expr_vec_construct\l\&lt; expr_vec_load \&gt;" alt="" coords="432,271,611,315"/>
+<area shape="rect" id="node5" href="$a00062.html" title="simdpp::expr_vec_set\l_splat\&lt; VE \&gt;" alt="" coords="696,5,840,49"/>
+<area shape="rect" id="node9" href="$a00060.html" title="simdpp::expr_vec_load_u" alt="" coords="685,79,851,107"/>
+<area shape="rect" id="node13" href="$a00061.html" title="simdpp::expr_vec_make\l_const\&lt; VE, N \&gt;" alt="" coords="689,138,847,182"/>
+<area shape="rect" id="node17" href="$a00059.html" title="simdpp::expr_vec_load\l_splat" alt="" coords="693,205,843,249"/>
+<area shape="rect" id="node21" href="$a00058.html" title="simdpp::expr_vec_load" alt="" coords="693,279,843,307"/>
+</map>

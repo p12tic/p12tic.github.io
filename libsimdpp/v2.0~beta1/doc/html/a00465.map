@@ -1,0 +1,44 @@
+<map id="simdpp::any_vec16&lt; N, V &gt;" name="simdpp::any_vec16&lt; N, V &gt;">
+<area shape="rect" id="node7" href="$a00010.html" title="simdpp::any_int16\&lt;\l N, V \&gt;" alt="" coords="824,517,955,561"/>
+<area shape="rect" id="node66" href="$a00014.html" title="simdpp::any_vec16\&lt;\l N, uint16\&lt; 8, void \&gt; \&gt;" alt="" coords="816,883,963,927"/>
+<area shape="rect" id="node69" href="$a00014.html" title="simdpp::any_vec16\&lt;\l N, uint16\&lt; N, void \&gt; \&gt;" alt="" coords="816,74,963,118"/>
+<area shape="rect" id="node72" href="$a00014.html" title="simdpp::any_vec16\&lt;\l N, int16\&lt; 16, void \&gt; \&gt;" alt="" coords="816,306,963,350"/>
+<area shape="rect" id="node75" href="$a00014.html" title="simdpp::any_vec16\&lt;\l N, int16\&lt; 8, void \&gt; \&gt;" alt="" coords="820,221,959,265"/>
+<area shape="rect" id="node78" href="$a00014.html" title="simdpp::any_vec16\&lt;\l N, int16\&lt; N, void \&gt; \&gt;" alt="" coords="819,725,960,769"/>
+<area shape="rect" id="node81" href="$a00014.html" title="simdpp::any_vec16\&lt;\l N, uint16\&lt; 16, void \&gt; \&gt;" alt="" coords="813,145,965,189"/>
+<area shape="rect" id="node84" href="$a00014.html" title="simdpp::any_vec16\&lt;\l N, mask_int16\&lt; N, void \&gt; \&gt;" alt="" coords="800,585,979,629"/>
+<area shape="rect" id="node87" href="$a00014.html" title="simdpp::any_vec16\&lt;\l N, mask_int16\&lt; 8, void \&gt; \&gt;" alt="" coords="801,403,977,447"/>
+<area shape="rect" id="node90" href="$a00014.html" title="simdpp::any_vec16\&lt;\l N, mask_int16\&lt; 16,\l void \&gt; \&gt;" alt="" coords="820,983,959,1043"/>
+<area shape="rect" id="node93" href="$a00014.html" title="simdpp::any_vec16\&lt;\l N, mask_int16\&lt; N, E \&gt; \&gt;" alt="" coords="808,654,971,698"/>
+<area shape="rect" id="node96" href="$a00014.html" title="simdpp::any_vec16\&lt;\l N, int16\&lt; N, E \&gt; \&gt;" alt="" coords="820,799,959,843"/>
+<area shape="rect" id="node99" href="$a00014.html" title="simdpp::any_vec16\&lt;\l N, uint16\&lt; N, E \&gt; \&gt;" alt="" coords="820,5,959,49"/>
+<area shape="rect" id="node2" href="$a00018.html" title="simdpp::any_vec\&lt; N\l *2, V \&gt;" alt="" coords="283,517,419,561"/>
+<area shape="rect" id="node4" href="$a00018.html" title="Represents any vector that has B bytes of data. " alt="" coords="5,525,168,553"/>
+<area shape="rect" id="node9" href="$a00010.html" title="simdpp::any_int16\&lt;\l 8, int16\&lt; 8, void \&gt; \&gt;" alt="" coords="1197,278,1333,322"/>
+<area shape="rect" id="node13" href="$a00010.html" title="simdpp::any_int16\&lt;\l N, uint16\&lt; N, void \&gt; \&gt;" alt="" coords="1192,99,1339,143"/>
+<area shape="rect" id="node19" href="$a00010.html" title="simdpp::any_int16\&lt;\l 8, mask_int16\&lt; 8, void \&gt; \&gt;" alt="" coords="1179,425,1352,469"/>
+<area shape="rect" id="node23" href="$a00010.html" title="simdpp::any_int16\&lt;\l 16, int16\&lt; 16, void \&gt; \&gt;" alt="" coords="1191,354,1340,398"/>
+<area shape="rect" id="node27" href="$a00010.html" title="simdpp::any_int16\&lt;\l 16, uint16\&lt; 16, void \&gt; \&gt;" alt="" coords="1187,209,1344,253"/>
+<area shape="rect" id="node31" href="$a00010.html" title="simdpp::any_int16\&lt;\l N, int16\&lt; N, void \&gt; \&gt;" alt="" coords="1195,697,1336,741"/>
+<area shape="rect" id="node37" href="$a00010.html" title="simdpp::any_int16\&lt;\l 8, uint16\&lt; 8, void \&gt; \&gt;" alt="" coords="1193,874,1337,918"/>
+<area shape="rect" id="node41" href="$a00010.html" title="simdpp::any_int16\&lt;\l N, mask_int16\&lt; N, void \&gt; \&gt;" alt="" coords="1176,530,1355,574"/>
+<area shape="rect" id="node47" href="$a00010.html" title="simdpp::any_int16\&lt;\l 16, mask_int16\&lt; 16,\l void \&gt; \&gt;" alt="" coords="1195,978,1336,1038"/>
+<area shape="rect" id="node51" href="$a00010.html" title="simdpp::any_int16\&lt;\l N, mask_int16\&lt; N, E \&gt; \&gt;" alt="" coords="1184,617,1347,661"/>
+<area shape="rect" id="node56" href="$a00010.html" title="simdpp::any_int16\&lt;\l N, int16\&lt; N, E \&gt; \&gt;" alt="" coords="1200,789,1331,833"/>
+<area shape="rect" id="node61" href="$a00010.html" title="simdpp::any_int16\&lt;\l N, uint16\&lt; N, E \&gt; \&gt;" alt="" coords="1199,18,1332,62"/>
+<area shape="rect" id="node11" href="$a00070.html" title="Class representing 8x 16&#45;bit signed integer vector. " alt="" coords="1408,286,1563,314"/>
+<area shape="rect" id="node15" href="$a00126.html" title="Class representing an unsigned int16 vector of arbitrary length. " alt="" coords="1421,77,1549,121"/>
+<area shape="rect" id="node17" href="$a00123.html" title="simdpp::uint16\&lt; SIMDPP\l_FAST_INT16_SIZE \&gt;" alt="" coords="1764,95,1929,139"/>
+<area shape="rect" id="node21" href="$a00112.html" title="Class representing possibly optimized mask data for 8x 16&#45;bit integer vector. " alt="" coords="1419,425,1552,469"/>
+<area shape="rect" id="node25" href="$a00069.html" title="Class representing 16x 16&#45;bit signed integer vector. " alt="" coords="1423,354,1548,398"/>
+<area shape="rect" id="node29" href="$a00124.html" title="Class representing 16x 16&#45;bit unsigned integer vector. " alt="" coords="1419,209,1552,253"/>
+<area shape="rect" id="node33" href="$a00022.html" title="simdpp::int16\&lt; SIMDPP\l_FAST_INT16_SIZE \&gt;" alt="" coords="1768,762,1925,806"/>
+<area shape="rect" id="node35" href="$a00071.html" title="Class representing an signed int16 vector of arbitrary length. " alt="" coords="1407,694,1564,722"/>
+<area shape="rect" id="node39" href="$a00125.html" title="Class representing 8x 16&#45;bit unsigned integer vector. " alt="" coords="1423,874,1548,918"/>
+<area shape="rect" id="node43" href="$a00028.html" title="simdpp::mask_int16\l\&lt; SIMDPP_FAST_INT16\l_SIZE \&gt;" alt="" coords="1764,578,1929,638"/>
+<area shape="rect" id="node45" href="$a00113.html" title="Class representing a mask for 16&#45;bit integer vector of arbitrary length. " alt="" coords="1419,499,1552,543"/>
+<area shape="rect" id="node49" href="$a00111.html" title="Class representing possibly optimized mask data for 8x 16&#45;bit integer vector. " alt="" coords="1419,986,1552,1030"/>
+<area shape="rect" id="node53" href="$a00028.html" title="simdpp::mask_int16\l\&lt; N, E \&gt;" alt="" coords="1419,617,1552,661"/>
+<area shape="rect" id="node58" href="$a00022.html" title="simdpp::int16\&lt; N, E \&gt;" alt="" coords="1415,797,1556,825"/>
+<area shape="rect" id="node63" href="$a00123.html" title="simdpp::uint16\&lt; N, E \&gt;" alt="" coords="1411,26,1560,54"/>
+</map>

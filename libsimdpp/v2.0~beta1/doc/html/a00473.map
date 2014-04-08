@@ -1,0 +1,23 @@
+<map id="simdpp::any_float64&lt; N, V &gt;" name="simdpp::any_float64&lt; N, V &gt;">
+<area shape="rect" id="node9" href="$a00009.html" title="simdpp::any_float64\l\&lt; N, mask_float64\&lt; N,\l void \&gt; \&gt;" alt="" coords="989,5,1139,65"/>
+<area shape="rect" id="node15" href="$a00009.html" title="simdpp::any_float64\l\&lt; 2, mask_float64\&lt; 2,\l void \&gt; \&gt;" alt="" coords="992,87,1136,147"/>
+<area shape="rect" id="node19" href="$a00009.html" title="simdpp::any_float64\l\&lt; N, float64\&lt; N, E \&gt; \&gt;" alt="" coords="992,549,1136,593"/>
+<area shape="rect" id="node25" href="$a00009.html" title="simdpp::any_float64\l\&lt; 4, mask_float64\&lt; 4,\l void \&gt; \&gt;" alt="" coords="992,253,1136,313"/>
+<area shape="rect" id="node29" href="$a00009.html" title="simdpp::any_float64\l\&lt; 2, float64\&lt; 2, void \&gt; \&gt;" alt="" coords="987,335,1141,379"/>
+<area shape="rect" id="node33" href="$a00009.html" title="simdpp::any_float64\l\&lt; N, float64\&lt; N, void \&gt; \&gt;" alt="" coords="985,402,1143,446"/>
+<area shape="rect" id="node38" href="$a00009.html" title="simdpp::any_float64\l\&lt; 4, float64\&lt; 4, void \&gt; \&gt;" alt="" coords="987,473,1141,517"/>
+<area shape="rect" id="node42" href="$a00009.html" title="simdpp::any_float64\l\&lt; N, mask_float64\&lt; N,\l E \&gt; \&gt;" alt="" coords="989,170,1139,230"/>
+<area shape="rect" id="node2" href="$a00016.html" title="simdpp::any_vec64\&lt;\l N, V \&gt;" alt="" coords="469,299,608,343"/>
+<area shape="rect" id="node4" href="$a00018.html" title="simdpp::any_vec\&lt; N\l *8, V \&gt;" alt="" coords="283,299,419,343"/>
+<area shape="rect" id="node6" href="$a00018.html" title="Represents any vector that has B bytes of data. " alt="" coords="5,307,168,335"/>
+<area shape="rect" id="node11" href="$a00027.html" title="simdpp::mask_float64\l\&lt; SIMDPP_FAST_FLOAT64\l_SIZE \&gt;" alt="" coords="1569,31,1756,91"/>
+<area shape="rect" id="node13" href="$a00110.html" title="Class representing possibly optimized mask data for 2x 64&#45;bit floating point vector. " alt="" coords="1200,35,1344,79"/>
+<area shape="rect" id="node17" href="$a00108.html" title="Class representing possibly optimized mask data for 2x 64&#45;bit floating point vector. " alt="" coords="1200,102,1344,146"/>
+<area shape="rect" id="node21" href="$a00021.html" title="simdpp::float64\&lt; N, E \&gt;" alt="" coords="1196,567,1348,595"/>
+<area shape="rect" id="node23" href="$a00021.html" title="simdpp::float64\&lt; SIMDPP\l_FAST_FLOAT64_SIZE \&gt;" alt="" coords="1576,434,1749,478"/>
+<area shape="rect" id="node27" href="$a00109.html" title="Class representing possibly optimized mask data for 2x 64&#45;bit floating point vector. " alt="" coords="1200,250,1344,294"/>
+<area shape="rect" id="node31" href="$a00066.html" title="simdpp::float64\&lt; 2,\l void \&gt;" alt="" coords="1208,317,1336,361"/>
+<area shape="rect" id="node36" href="$a00068.html" title="Class representing a float64 vector of arbitrary length. " alt="" coords="1207,434,1337,478"/>
+<area shape="rect" id="node40" href="$a00067.html" title="simdpp::float64\&lt; 4,\l void \&gt;" alt="" coords="1208,501,1336,545"/>
+<area shape="rect" id="node44" href="$a00027.html" title="simdpp::mask_float64\l\&lt; N, E \&gt;" alt="" coords="1200,174,1344,218"/>
+</map>
