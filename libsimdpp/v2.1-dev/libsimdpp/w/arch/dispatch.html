@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<title>Dynamic dispatch - libsimdpp-docs</title>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<meta name="generator" content="MediaWiki 1.23.15">
+
+
+
+
+
+
+<link rel="stylesheet" href="../../mwiki/load.php%3Fdebug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cmediawiki.skinning.interface%257Cmediawiki.ui.button%257Cskins.cppreference2&amp;only=styles&amp;skin=cppreference2&amp;*.css">
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="../../mwiki/load.php%3Fdebug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=cppreference2&amp;*.css">
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: mediawiki-mwiki_libsimdpp_:resourceloader:filter:minify-css:7:09491d659b7f9960acfc4bbdea311b1b */</style>
+<script src="../../mwiki/load.php%3Fdebug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"arch/dispatch","wgTitle":"arch/dispatch","wgCurRevisionId":1102,"wgRevisionId":1102,"wgArticleId":2,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"arch/dispatch","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"editfont":"default","editondblclick":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":1,"extendwatchlist":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nickname":"","norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"rcdays":7,"rclimit":50,"rows":25,"showhiddencats":0,"shownumberswatching":1,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":1,"watchdefault":1,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,
+"useeditwarning":1,"prefershttps":1,"editsection":0,"showtoc":0,"language":"en","variant-gan":"gan","variant-iu":"iu","variant-kk":"kk","variant-ku":"ku","variant-shi":"shi","variant-sr":"sr","variant-tg":"tg","variant-uz":"uz","variant-zh":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"variant":"en"});},{},{});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});},{},{});
+/* cache key: mediawiki-mwiki_libsimdpp_:resourceloader:filter:minify-js:7:04bcd510e6b27e2a36e3a47925b35066 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script>
+<style type="text/css">/*<![CDATA[*/
+.source-cpp {line-height: normal;}
+.source-cpp li, .source-cpp pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for cpp
+ * CSS class: source-cpp, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.cpp.source-cpp .de1, .cpp.source-cpp .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;font-family: monospace, monospace;}
+.cpp.source-cpp  {font-family:monospace;}
+.cpp.source-cpp .imp {font-weight: bold; color: red;}
+.cpp.source-cpp li, .cpp.source-cpp .li1 {font-weight: normal; vertical-align:top;}
+.cpp.source-cpp .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.cpp.source-cpp .li2 {font-weight: bold; vertical-align:top;}
+.cpp.source-cpp .kw1 {color: #0000ff;}
+.cpp.source-cpp .kw2 {color: #0000ff;}
+.cpp.source-cpp .kw3 {color: #0000dd;}
+.cpp.source-cpp .kw4 {color: #0000ff;}
+.cpp.source-cpp .co1 {color: #666666;}
+.cpp.source-cpp .co2 {color: #339900;}
+.cpp.source-cpp .coMULTI {color: #ff0000; font-style: italic;}
+.cpp.source-cpp .es0 {color: #000099; font-weight: bold;}
+.cpp.source-cpp .es1 {color: #000099; font-weight: bold;}
+.cpp.source-cpp .es2 {color: #660099; font-weight: bold;}
+.cpp.source-cpp .es3 {color: #660099; font-weight: bold;}
+.cpp.source-cpp .es4 {color: #660099; font-weight: bold;}
+.cpp.source-cpp .es5 {color: #006699; font-weight: bold;}
+.cpp.source-cpp .br0 {color: #008000;}
+.cpp.source-cpp .sy0 {color: #008000;}
+.cpp.source-cpp .sy1 {color: #000080;}
+.cpp.source-cpp .sy2 {color: #000040;}
+.cpp.source-cpp .sy3 {color: #000040;}
+.cpp.source-cpp .sy4 {color: #008080;}
+.cpp.source-cpp .st0 {color: #FF0000;}
+.cpp.source-cpp .nu0 {color: #0000dd;}
+.cpp.source-cpp .nu6 {color: #208080;}
+.cpp.source-cpp .nu8 {color: #208080;}
+.cpp.source-cpp .nu12 {color: #208080;}
+.cpp.source-cpp .nu16 {color:#800080;}
+.cpp.source-cpp .nu17 {color:#800080;}
+.cpp.source-cpp .nu18 {color:#800080;}
+.cpp.source-cpp .nu19 {color:#800080;}
+.cpp.source-cpp .me1 {color: #007788;}
+.cpp.source-cpp .me2 {color: #007788;}
+.cpp.source-cpp .ln-xtra, .cpp.source-cpp li.ln-xtra, .cpp.source-cpp div.ln-xtra {background-color: #ffc;}
+.cpp.source-cpp span.xtra { display:block; }
+
+/*]]>*/
+</style>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-arch_dispatch skin-cppreference2 action-view vector-animateLayout cpp-navbar">
+		
+		<div id="cpp-content-base">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				<div id="mw-js-message" style="display:none;"></div>
+								<h1 id="firstHeading" class="firstHeading" lang="en"><span dir="auto">Dynamic dispatch</span></h1>
+								<div id="bodyContent">
+										<div id="siteSub">From libsimdpp-docs</div>
+										<div id="contentSub"></div>
+															<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+<div class="t-navbar" style="">
+<div class="t-navbar-sep"> </div>
+<div class="t-navbar-head">
+<a href="../index.html" title="Main Page"> libsimdpp</a><div class="t-navbar-menu"><div>
+<div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"> <a href="../types.html" title="types"> Types</a> </td></tr>
+<tr class="t-nv-h1"><td colspan="5"> Operations </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../bitwise.html" title="bitwise"> Bitwise operations</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../fp.html" title="fp"> Floating-point operations</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../int.html" title="int"> Integer operations</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../mem.html" title="mem"> Memory access operations</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../shuffle.html" title="shuffle"> Shuffle operations</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../misc.html" title="misc"> Miscellaneous operations</a> </td></tr>
+</table></div>
+<div></div>
+</div></div>
+</div>
+<div class="t-navbar-sep"> </div>
+<div class="t-navbar-head">Instruction sets<div class="t-navbar-menu"><div>
+<div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"> <a href="selection.html" title="arch/selection">Instruction set selection</a>
+</td></tr>
+<tr class="t-nv"><td colspan="5"> <strong class="selflink">Dynamic dispatch</strong>
+</td></tr>
+</table></div>
+<div></div>
+</div></div>
+</div>
+<div class="t-navbar-sep"> </div>
+</div>
+<p>Using libsimdpp it's easy to produce binaries that support multiple instruction sets and automatically select the fastest available on target processor. The implementation of this consists of three parts:
+</p>
+<ul>
+<li> All functions that need to be dispatched must be put in <code>SIMDPP_ARCH_NAMESPACE</code>, a special namespace whose name depends on the instruction set that is being compiled for. This is required for dynamic dispatcher to function and also helps to avoid ODR violations. For each function, one of the <code>SIMDPP_MAKE_DISPATCHER_*</code> must be invoked in namespace scope just outside the <code>SIMDPP_ARCH_NAMESPACE</code> namespace the actual function is in.
+</li>
+</ul>
+<ul>
+<li> Production of several object files each of which contain compiled code for different target instruction set. The target instruction set is selected by predefining appropriate macros as described <a href="selection.html" title="arch/selection">here</a>.
+</li>
+</ul>
+<ul>
+<li> Production of auxiliary dispatcher code that, on runtime, queries the system about the available instruction sets and based on that information selects the fastest implementation. In libsimdpp, the code is added to one of the mentioned object files by compiling it with additional predefined flags that tell the library that dispatcher code is needed and which instruction sets the user wants to support.
+</li>
+</ul>
+<p>The additional predefined flags for dispatcher support are the following:
+</p>
+<ul>
+<li> <code><b>SIMDPP_EMIT_DISPATCHER</b></code> - defining it tells the library that this object file should contain implementations of dispatcher functionality.
+</li>
+</ul>
+<ul>
+<li> <code><b>SIMDPP_USER_ARCH_INFO</b></code> - tells the dispatcher how to acquire the information about the supported instruction sets. The macro must result in an expression that evaluates to a value of <span class="t-c"><span class="mw-geshi cpp source-cpp">simdpp<span class="sy4">::</span><span class="me2">Arch</span></span></span> type.
+</li>
+</ul>
+<ul>
+<li> <code><b>SIMDPP_DISPATCH_ARCH1</b></code>, <code><b>SIMDPP_DISPATCH_ARCH2</b></code>, <code><b>SIMDPP_DISPATCH_ARCH3</b></code>, ...: these tell the library for which instruction sets the user wants to dispatch. Each of these macros needs to be defined to a comma separated list of <code>SIMDPP_ARCH_*</code> values corresponding to the enabled instruction sets.
+</li>
+</ul>
+<h3>
+<span class="mw-headline" id="Example">Example</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://doc.radix.lt:9013/libsimdpp/mwiki/index.php?title=arch/dispatch&amp;action=edit&amp;section=1" title="Edit section: Example">edit</a><span class="mw-editsection-bracket">]</span></span>
+</h3>
+<p><code><b>test.h</b></code>
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="cpp source-cpp"><pre class="de1"><span class="kw4">void</span> print_arch<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span></pre></div></div>
+<p><code><b>test.cc</b></code>
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include "test.h"</span>
+<span class="co2">#include &lt;simdpp/simd.h&gt;</span>
+<span class="co2">#include &lt;iostream&gt;</span>
+<span class="co2">#include &lt;simdpp/dispatch/get_arch_gcc_builtin_cpu_supports.h&gt;</span>
+<span class="co2">#define SIMDPP_USER_ARCH_INFO ::simdpp::get_arch_gcc_builtin_cpu_supports()</span>
+ 
+<span class="kw2">namespace</span> SIMDPP_ARCH_NAMESPACE <span class="br0">{</span>
+ 
+<span class="kw4">void</span> print_arch<span class="br0">(</span><span class="br0">)</span>
+<span class="br0">{</span>
+    std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="kw2">static_cast</span><span class="sy1">&lt;</span><span class="kw4">unsigned</span><span class="sy1">&gt;</span><span class="br0">(</span>simdpp<span class="sy4">::</span><span class="me2">this_compile_arch</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+<span class="br0">}</span>
+ 
+<span class="br0">}</span> <span class="co1">// namespace SIMDPP_ARCH_NAMESPACE</span>
+ 
+SIMDPP_MAKE_DISPATCHER_VOID0<span class="br0">(</span>print_arch<span class="br0">)</span><span class="sy4">;</span></pre></div></div>
+<p><code><b>main.cc</b></code>
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include "test.h"</span>
+ 
+<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
+<span class="br0">{</span>
+    print_arch<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+<span class="br0">}</span></pre></div></div>
+<p><code><b>Makefile</b></code>
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="cpp source-cpp"><pre class="de1">CXXFLAGS<span class="sy1">=</span><span class="st0">""</span>
+ 
+test<span class="sy4">:</span> main.<span class="me1">o</span> test_sse2.<span class="me1">o</span> test_sse3.<span class="me1">o</span> test_sse4_1.<span class="me1">o</span> test_null.<span class="me1">o</span>
+    g<span class="sy2">++</span> $<span class="sy3">^</span> <span class="sy2">-</span>o test
+ 
+main.<span class="me1">o</span><span class="sy4">:</span> main.<span class="me1">cc</span>
+    g<span class="sy2">++</span> main.<span class="me1">cc</span> $<span class="br0">(</span>CXXFLAGS<span class="br0">)</span> <span class="sy2">-</span>c <span class="sy2">-</span>o main.<span class="me1">o</span>
+ 
+test_null.<span class="me1">o</span><span class="sy4">:</span> test.<span class="me1">cc</span>
+    g<span class="sy2">++</span> test.<span class="me1">cc</span> <span class="sy2">-</span>c $<span class="br0">(</span>CXXFLAGS<span class="br0">)</span> <span class="sy2">-</span>DSIMDPP_EMIT_DISPATCHER \
+        <span class="sy2">-</span>DSIMDPP_DISPATCH_ARCH1<span class="sy1">=</span>SIMDPP_ARCH_X86_SSE2 \
+        <span class="sy2">-</span>DSIMDPP_DISPATCH_ARCH2<span class="sy1">=</span>SIMDPP_ARCH_X86_SSE3 \
+        <span class="sy2">-</span>DSIMDPP_DISPATCH_ARCH3<span class="sy1">=</span>SIMDPP_ARCH_X86_SSE4_1 <span class="sy2">-</span>o test_null.<span class="me1">o</span>
+ 
+test_sse2.<span class="me1">o</span><span class="sy4">:</span> test.<span class="me1">cc</span>
+    g<span class="sy2">++</span> test.<span class="me1">cc</span> <span class="sy2">-</span>c $<span class="br0">(</span>CXXFLAGS<span class="br0">)</span> <span class="sy2">-</span>DSIMDPP_ARCH_X86_SSE2 <span class="sy2">-</span>msse2 <span class="sy2">-</span>o test_sse2.<span class="me1">o</span>
+ 
+test_sse3.<span class="me1">o</span><span class="sy4">:</span> test.<span class="me1">cc</span>
+    g<span class="sy2">++</span> test.<span class="me1">cc</span> <span class="sy2">-</span>c $<span class="br0">(</span>CXXFLAGS<span class="br0">)</span> <span class="sy2">-</span>DSIMDPP_ARCH_X86_SSE3 <span class="sy2">-</span>msse3 <span class="sy2">-</span>o test_sse3.<span class="me1">o</span>
+ 
+test_sse4_1.<span class="me1">o</span><span class="sy4">:</span> test.<span class="me1">cc</span>
+    g<span class="sy2">++</span> test.<span class="me1">cc</span> <span class="sy2">-</span>c $<span class="br0">(</span>CXXFLAGS<span class="br0">)</span> <span class="sy2">-</span>DSIMDPP_ARCH_X86_SSE4_1 <span class="sy2">-</span>msse4.1 <span class="sy2">-</span>o test_sse4_1.<span class="me1">o</span></pre></div></div>
+
+
+
+
+</div>										
+															<div id="catlinks" class="catlinks catlinks-allhidden"></div>															<div class="visualClear"></div>
+									</div>
+			</div>
+		</div>
+		
+		<script>/*<![CDATA[*/window.jQuery && jQuery.ready();/*]]>*/</script><script>if(window.mw){
+mw.loader.state({"site":"loading","user":"ready","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest"],null,true);
+}</script>
+<script src="../../mwiki/load.php%3Fdebug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgBackendResponseTime":33});
+}</script>
+	</body>
+
+</html>
