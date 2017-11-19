@@ -19,7 +19,7 @@
 /* cache key: mediawiki-mwiki_libsimdpp_:resourceloader:filter:minify-css:7:09491d659b7f9960acfc4bbdea311b1b */</style>
 <script src="../../mwiki/load.php%3Fdebug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"shuffle/blend","wgTitle":"shuffle/blend","wgCurRevisionId":201,"wgRevisionId":201,"wgArticleId":100,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Todo without reason"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"shuffle/blend","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"shuffle/blend","wgTitle":"shuffle/blend","wgCurRevisionId":1720,"wgRevisionId":1720,"wgArticleId":100,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Todo without reason"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"shuffle/blend","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"editfont":"default","editondblclick":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":1,"extendwatchlist":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nickname":"","norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"rcdays":7,"rclimit":50,"rows":25,"showhiddencats":0,"shownumberswatching":1,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":1,"watchdefault":1,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,
 "useeditwarning":1,"prefershttps":1,"editsection":0,"showtoc":0,"language":"en","variant-gan":"gan","variant-iu":"iu","variant-kk":"kk","variant-ku":"ku","variant-shi":"shi","variant-sr":"sr","variant-tg":"tg","variant-uz":"uz","variant-zh":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"variant":"en"});},{},{});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});},{},{});
@@ -101,6 +101,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <a href="../index.html" title="Main Page"> libsimdpp</a><div class="t-navbar-menu"><div>
 <div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"> <a href="../types.html" title="types"> Types</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../cap.html" title="cap"> Capabilities</a> </td></tr>
 <tr class="t-nv-h1"><td colspan="5"> Operations </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../bitwise.html" title="bitwise"> Bitwise operations</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../fp.html" title="fp"> Floating-point operations</a> </td></tr>
@@ -135,14 +136,25 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </table></div></td>
 </tr>
 <tr class="t-nv-h1"><td colspan="5"> Shuffles operating on 128-bit blocks</td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="alignX_128.html" title="shuffle/alignX 128"><span class="t-lines"><span>align16 align8 align4 align2</span></span></a></div></div></td></tr> 
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="moveX_l_128.html" title="shuffle/moveX l 128"><span class="t-lines"><span>move16_l move8_l move4_l move2_l</span></span></a></div></div></td></tr> 
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="splatX_128.html" title="shuffle/splatX 128"><span class="t-lines"><span>splat16 splat8 splat4 splat2</span></span></a></div></div></td></tr> 
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="moveX_r_128.html" title="shuffle/moveX r 128"><span class="t-lines"><span>move16_r move8_r move4_r move2_r</span></span></a></div></div></td></tr> 
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="zipX_hi_128.html" title="shuffle/zipX hi 128"><span class="t-lines"><span>zip16_hi zip8_hi zip4_hi zip2_hi</span></span></a></div></div></td></tr> 
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="zipX_lo_128.html" title="shuffle/zipX lo 128"><span class="t-lines"><span>zip16_lo zip8_lo zip4_lo zip2_lo</span></span></a></div></div></td></tr> 
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="unzipX_hi_128.html" title="shuffle/unzipX hi 128"><span class="t-lines"><span>unzip16_hi unzip8_hi unzip4_hi unzip2_hi</span></span></a></div></div></td></tr> 
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="unzipX_lo_128.html" title="shuffle/unzipX lo 128"><span class="t-lines"><span>unzip16_lo unzip8_lo unzip4_lo unzip2_lo</span></span></a></div></div></td></tr> 
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="alignX_128.html" title="shuffle/alignX 128"><span class="t-lines"><span>align16 align8 align4 align2</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="moveX_l_128.html" title="shuffle/moveX l 128"><span class="t-lines"><span>move16_l move8_l move4_l move2_l</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="splatX_128.html" title="shuffle/splatX 128"><span class="t-lines"><span>splat16 splat8 splat4 splat2</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="moveX_r_128.html" title="shuffle/moveX r 128"><span class="t-lines"><span>move16_r move8_r move4_r move2_r</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="zipX_hi_128.html" title="shuffle/zipX hi 128"><span class="t-lines"><span>zip16_hi zip8_hi zip4_hi zip2_hi</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="zipX_lo_128.html" title="shuffle/zipX lo 128"><span class="t-lines"><span>zip16_lo zip8_lo zip4_lo zip2_lo</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="unzipX_hi_128.html" title="shuffle/unzipX hi 128"><span class="t-lines"><span>unzip16_hi unzip8_hi unzip4_hi unzip2_hi</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="unzipX_lo_128.html" title="shuffle/unzipX lo 128"><span class="t-lines"><span>unzip16_lo unzip8_lo unzip4_lo unzip2_lo</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="make_shuffle_bytes16_mask.html" title="shuffle/make shuffle bytes16 mask"><span class="t-lines"><span>make_shuffle_bytes16_mask</span></span></a></div></div></td></tr>
+<tr class="t-nv-col-table">
+<td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="shuffle_bytes16.html" title="shuffle/shuffle bytes16"><span class="t-lines"><span>shuffle_bytes16</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="shuffle_zbytes16.html" title="shuffle/shuffle zbytes16"><span class="t-lines"><span>shuffle_zbytes16</span></span></a></div></div></td></tr>
+</table></div></td>
+<td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="permute_bytes16.html" title="shuffle/permute bytes16"><span class="t-lines"><span>permute_bytes16</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="permute_zbytes16.html" title="shuffle/permute zbytes16"><span class="t-lines"><span>permute_zbytes16</span></span></a></div></div></td></tr>
+</table></div></td>
+</tr>
 </table></div>
 <div></div>
 </div></div>
@@ -167,7 +179,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </tbody></table>
 <p>Blends vectors in two vectors according to a mask. Elements for which corresponding element in <code>mask</code> is set to ones are picked from the <code>on</code> vector. Elements for which corresponding element in <code>mask</code> is set to zeroes are picked from the <code>off</code> vector.
 </p>
-<p>The return type is a <a href="../types/expr.html" title="types/expr">vector expression</a> of <code>N</code> bytes. The vector type is governed by the <a href="../types/promotion.html" title="types/promotion">expression promotion</a> rules.
+<p>The return type is a <a href="../types.html#expr" title="types">vector expression</a> of <code>N</code> bytes. The vector type is governed by the <a href="../types/promotion.html" title="types/promotion">expression promotion</a> rules.
 </p>
 <div id="toc" class="toc">
 <div id="toctitle"><h2>Contents</h2></div>
@@ -197,7 +209,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <h3>
 <span class="mw-headline" id="Return_value">Return value</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://doc.radix.lt:9013/libsimdpp/mwiki/index.php?title=shuffle/blend&amp;action=edit&amp;section=2" title="Edit section: Return value">edit</a><span class="mw-editsection-bracket">]</span></span>
 </h3>
-<p>A <a href="../types/expr.html" title="types/expr">vector expression</a> evaluating to <code>mask ? on : off</code>.
+<p>A <a href="../types.html#expr" title="types">vector expression</a> evaluating to <code>mask ? on : off</code>.
 </p>
 <h3>
 <span class="mw-headline" id="Equivalent_operation">Equivalent operation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://doc.radix.lt:9013/libsimdpp/mwiki/index.php?title=shuffle/blend&amp;action=edit&amp;section=3" title="Edit section: Equivalent operation">edit</a><span class="mw-editsection-bracket">]</span></span>
@@ -230,7 +242,7 @@ mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hid
 }</script>
 <script src="../../mwiki/load.php%3Fdebug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
 <script>if(window.mw){
-mw.config.set({"wgBackendResponseTime":190});
+mw.config.set({"wgBackendResponseTime":223});
 }</script>
 	</body>
 
