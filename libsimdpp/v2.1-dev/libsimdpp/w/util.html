@@ -19,7 +19,7 @@
 /* cache key: mediawiki-mwiki_libsimdpp_:resourceloader:filter:minify-css:7:09491d659b7f9960acfc4bbdea311b1b */</style>
 <script src="../mwiki/load.php%3Fdebug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"util","wgTitle":"util","wgCurRevisionId":1108,"wgRevisionId":1108,"wgArticleId":123,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"util","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"util","wgTitle":"util","wgCurRevisionId":1858,"wgRevisionId":1858,"wgArticleId":123,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"util","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"editfont":"default","editondblclick":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":1,"extendwatchlist":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nickname":"","norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"rcdays":7,"rclimit":50,"rows":25,"showhiddencats":0,"shownumberswatching":1,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":1,"watchdefault":1,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,
 "useeditwarning":1,"prefershttps":1,"editsection":0,"showtoc":0,"language":"en","variant-gan":"gan","variant-iu":"iu","variant-kk":"kk","variant-ku":"ku","variant-shi":"shi","variant-sr":"sr","variant-tg":"tg","variant-uz":"uz","variant-zh":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"variant":"en"});},{},{});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});},{},{});
@@ -103,6 +103,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="types.html" title="types"> Types</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="cap.html" title="cap"> Capabilities</a> </td></tr>
 <tr class="t-nv-h1"><td colspan="5"> Operations </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="conv.html" title="conv"> Conversions</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="bitwise.html" title="bitwise"> Bitwise operations</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="fp.html" title="fp"> Floating-point operations</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="int.html" title="int"> Integer operations</a> </td></tr>
@@ -121,6 +122,21 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </div>
 <div class="t-navbar-sep"> </div>
 </div>
+<div id="toc" class="toc">
+<div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="util.html#Alignment"><span class="tocnumber">1</span> <span class="toctext">Alignment</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="util.html#Vector_size_macros"><span class="tocnumber">2</span> <span class="toctext">Vector size macros</span></a></li>
+<li class="toclevel-1 tocsection-3">
+<a href="util.html#Enabled_instruction_set"><span class="tocnumber">3</span> <span class="toctext">Enabled instruction set</span></a>
+<ul>
+<li class="toclevel-2"><a href="util.html#Architecture"><span class="tocnumber">3.1</span> <span class="toctext">Architecture</span></a></li>
+<li class="toclevel-2"><a href="util.html#Instruction_sets"><span class="tocnumber">3.2</span> <span class="toctext">Instruction sets</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
 <h3>
 <span class="mw-headline" id="Alignment">Alignment</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://doc.radix.lt:9013/libsimdpp/mwiki/index.php?title=util&amp;action=edit&amp;section=1" title="Edit section: Alignment">edit</a><span class="mw-editsection-bracket">]</span></span>
 </h3>
@@ -224,6 +240,65 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </p>
 <table class="t-dsc-begin">
 
+<tr>
+<td colspan="2"> <h5><span class="mw-headline" id="Architecture">Architecture</span></h5>
+</td>
+</tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div>SIMDPP_32_BITS</div></div>
+</td>
+<td>   <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">1</span></span></span> if compiling for 32-bit architecture, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">0</span></span></span> otherwise  <br> <span class="t-mark">(macro constant)</span>
+</td>
+</tr>
+
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div>SIMDPP_64_BITS</div></div>
+</td>
+<td>   <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">1</span></span></span> if compiling for 64-bit architecture is available, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">0</span></span></span> otherwise  <br> <span class="t-mark">(macro constant)</span>
+</td>
+</tr>
+
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div>SIMDPP_X86</div></div>
+</td>
+<td>   <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">1</span></span></span> if compiling for x86, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">0</span></span></span> otherwise  <br> <span class="t-mark">(macro constant)</span>
+</td>
+</tr>
+
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div>SIMDPP_ARM</div></div>
+</td>
+<td>   <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">1</span></span></span> if compiling for ARM, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">0</span></span></span> otherwise  <br> <span class="t-mark">(macro constant)</span>
+</td>
+</tr>
+
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div>SIMDPP_PPC</div></div>
+</td>
+<td>   <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">1</span></span></span> if compiling for PowerPC, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">0</span></span></span> otherwise  <br> <span class="t-mark">(macro constant)</span>
+</td>
+</tr>
+
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div>SIMDPP_MIPS</div></div>
+</td>
+<td>   <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">1</span></span></span> if compiling for MIPS, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">0</span></span></span> otherwise  <br> <span class="t-mark">(macro constant)</span>
+</td>
+</tr>
+
+
+
+<tr>
+<td colspan="2"> <h5><span class="mw-headline" id="Instruction_sets">Instruction sets</span></h5>
+</td>
+</tr>
+
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div>SIMDPP_USE_NULL</div></div>
 </td>
@@ -321,6 +396,30 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 
 <tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div>SIMDPP_USE_AVX512BW</div></div>
+</td>
+<td>   <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">1</span></span></span> if AVX512BW is available, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">0</span></span></span> otherwise  <br> <span class="t-mark">(macro constant)</span>
+</td>
+</tr>
+
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div>SIMDPP_USE_AVX512DQ</div></div>
+</td>
+<td>   <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">1</span></span></span> if AVX512DQ is available, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">0</span></span></span> otherwise  <br> <span class="t-mark">(macro constant)</span>
+</td>
+</tr>
+
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div>SIMDPP_USE_AVX512VL</div></div>
+</td>
+<td>   <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">1</span></span></span> if AVX512VL is available, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">0</span></span></span> otherwise  <br> <span class="t-mark">(macro constant)</span>
+</td>
+</tr>
+
+
+<tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div>SIMDPP_USE_NEON</div></div>
 </td>
 <td>   <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">1</span></span></span> if NEON except floating-point support is available, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">0</span></span></span> otherwise  <br> <span class="t-mark">(macro constant)</span>
@@ -345,17 +444,17 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div>SIMDPP_32_BITS</div></div>
+<td>  <div class="t-dsc-member-div"><div>SIMDPP_USE_VSX_206</div></div>
 </td>
-<td>   <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">1</span></span></span> if compiling for 32-bit architecture, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">0</span></span></span> otherwise  <br> <span class="t-mark">(macro constant)</span>
+<td>   <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">1</span></span></span> if Power 2.06 VSX is available, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">0</span></span></span> otherwise  <br> <span class="t-mark">(macro constant)</span>
 </td>
 </tr>
 
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div>SIMDPP_64_BITS</div></div>
+<td>  <div class="t-dsc-member-div"><div>SIMDPP_USE_VSX_207</div></div>
 </td>
-<td>   <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">1</span></span></span> if compiling for 64-bit architecture is available, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">0</span></span></span> otherwise  <br> <span class="t-mark">(macro constant)</span>
+<td>   <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">1</span></span></span> if Power 2.07 VSX is available, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">0</span></span></span> otherwise  <br> <span class="t-mark">(macro constant)</span>
 </td>
 </tr>
 
@@ -377,9 +476,7 @@ mw.loader.state({"site":"loading","user":"ready","user.groups":"ready"});
 mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest"],null,true);
 }</script>
 <script src="../mwiki/load.php%3Fdebug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
-<script>if(window.mw){
-mw.config.set({"wgBackendResponseTime":418});
-}</script>
+
 	</body>
 
 </html>

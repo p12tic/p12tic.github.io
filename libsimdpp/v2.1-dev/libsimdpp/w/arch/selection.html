@@ -19,7 +19,7 @@
 /* cache key: mediawiki-mwiki_libsimdpp_:resourceloader:filter:minify-css:7:09491d659b7f9960acfc4bbdea311b1b */</style>
 <script src="../../mwiki/load.php%3Fdebug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"arch/selection","wgTitle":"arch/selection","wgCurRevisionId":1107,"wgRevisionId":1107,"wgArticleId":3,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"arch/selection","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"arch/selection","wgTitle":"arch/selection","wgCurRevisionId":1857,"wgRevisionId":1857,"wgArticleId":3,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"arch/selection","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"editfont":"default","editondblclick":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":1,"extendwatchlist":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nickname":"","norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"rcdays":7,"rclimit":50,"rows":25,"showhiddencats":0,"shownumberswatching":1,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":1,"watchdefault":1,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,
 "useeditwarning":1,"prefershttps":1,"editsection":0,"showtoc":0,"language":"en","variant-gan":"gan","variant-iu":"iu","variant-kk":"kk","variant-ku":"ku","variant-shi":"shi","variant-sr":"sr","variant-tg":"tg","variant-uz":"uz","variant-zh":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"variant":"en"});},{},{});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});},{},{});
@@ -48,6 +48,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../types.html" title="types"> Types</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../cap.html" title="cap"> Capabilities</a> </td></tr>
 <tr class="t-nv-h1"><td colspan="5"> Operations </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../conv.html" title="conv"> Conversions</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../bitwise.html" title="bitwise"> Bitwise operations</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../fp.html" title="fp"> Floating-point operations</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../int.html" title="int"> Integer operations</a> </td></tr>
@@ -73,15 +74,26 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </div>
 <p>During compilation libsimdpp needs to be explicitly told which instruction set to use. This is done by defining one of the macros listed in the table below before the first inclusion of the <code>simdpp/simd.h</code> header. Multiple options may be specified: for example, if user wants to select AVX and FMA4, then he needs to define <code>SIMDPP_ARCH_X86_AVX</code> and <code>SIMDPP_ARCH_X86_FMA4</code> macros.
 </p>
-<p><br>
-The following instruction sets are supported by the library.
+<p>Each row of the table lists the data formats supported by the SIMD unit of particular instruction set. The library can be used for unsupported data formats, but the operations are implemented without using SIMD hardware and may be slower than equivalent scalar C++ code.
 </p>
-<table class="wikitable">
+<table class="wikitable" style="font-size: 0.8em">
 
 <tr>
-<th> Instruction set
+<th style="padding-top: 4em; padding-bottom: 4em"> Instruction set
 </th>
 <th> Macro to enable it
+</th>
+<th> <div class="t-vertical"><div>8-bit integers</div></div>
+</th>
+<th> <div class="t-vertical"><div>16-bit integers</div></div>
+</th>
+<th> <div class="t-vertical"><div>32-bit integers</div></div>
+</th>
+<th> <div class="t-vertical"><div>64-bit integers</div></div>
+</th>
+<th> <div class="t-vertical"><div>32-bit floats</div></div>
+</th>
+<th> <div class="t-vertical"><div>64-bit floats</div></div>
 </th>
 <th> Remarks
 </th>
@@ -91,13 +103,37 @@ The following instruction sets are supported by the library.
 </td>
 <td> (none)
 </td>
-<td> Uses plain C. May be slower than equivalent C implementation as it makes compiler harder to reason about code. The compiler may still vectorize the code if it knows certain SIMD instruction set is available.
+<td style="background: #ececec; color: grey; vertical-align: middle; text-align: center;" class="table-na"> <small>N/A</small>
+</td>
+<td style="background: #ececec; color: grey; vertical-align: middle; text-align: center;" class="table-na"> <small>N/A</small>
+</td>
+<td style="background: #ececec; color: grey; vertical-align: middle; text-align: center;" class="table-na"> <small>N/A</small>
+</td>
+<td style="background: #ececec; color: grey; vertical-align: middle; text-align: center;" class="table-na"> <small>N/A</small>
+</td>
+<td style="background: #ececec; color: grey; vertical-align: middle; text-align: center;" class="table-na"> <small>N/A</small>
+</td>
+<td style="background: #ececec; color: grey; vertical-align: middle; text-align: center;" class="table-na"> <small>N/A</small>
+</td>
+<td> Uses plain C++. May be slower than equivalent C/C++ implementation as it makes compiler harder to reason about code. The compiler may still vectorize the code if it knows certain SIMD instruction set is available.
 </td>
 </tr>
 <tr>
 <td> x86 SSE2
 </td>
 <td> <code><b>SIMDPP_ARCH_X86_SSE2</b></code>
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
 </td>
 <td> (none)
 </td>
@@ -107,6 +143,18 @@ The following instruction sets are supported by the library.
 </td>
 <td> <code><b>SIMDPP_ARCH_X86_SSE3</b></code>
 </td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
 <td> Implies SSE2
 </td>
 </tr>
@@ -114,6 +162,18 @@ The following instruction sets are supported by the library.
 <td> x86 SSSE3
 </td>
 <td> <code><b>SIMDPP_ARCH_X86_SSSE3</b></code>
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
 </td>
 <td> Implies SSE3
 </td>
@@ -123,6 +183,18 @@ The following instruction sets are supported by the library.
 </td>
 <td> <code><b>SIMDPP_ARCH_X86_SSE4_1</b></code>
 </td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
 <td> Implies SSSE3
 </td>
 </tr>
@@ -130,6 +202,18 @@ The following instruction sets are supported by the library.
 <td> x86 <code>popcnt</code> instruction
 </td>
 <td> <code><b>SIMDPP_ARCH_X86_POPCNT_INSN</b></code>
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
 </td>
 <td> Implies SSSE3. This does not directly correspond to the ABM instruction set as Intel provides the instruction in SSE 4.2 already.
 </td>
@@ -139,13 +223,37 @@ The following instruction sets are supported by the library.
 </td>
 <td> <code><b>SIMDPP_ARCH_X86_AVX</b></code>
 </td>
-<td> 256-bit vectors for floating-point values, 128-bit vectors for integers. Implies SSE4.1
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center; background: #ffff90;" class="table-yes">256
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center; background: #ffff90;" class="table-yes">256
+</td>
+<td> Implies SSE4.1
 </td>
 </tr>
 <tr>
 <td> x86 FMA3 (Intel flavor)
 </td>
 <td> <code><b>SIMDPP_ARCH_X86_FMA3</b></code>
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
 </td>
 <td> Implies SSE3.
 </td>
@@ -155,13 +263,37 @@ The following instruction sets are supported by the library.
 </td>
 <td> <code><b>SIMDPP_ARCH_X86_FMA4</b></code>
 </td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
 <td> Implies SSE3.
 </td>
 </tr>
 <tr>
 <td> x86 XOP
 </td>
-<td> <code><b>SIMDPP_ARCH_X86_XOR</b></code>
+<td> <code><b>SIMDPP_ARCH_X86_XOP</b></code>
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
 </td>
 <td> Implies SSE3.
 </td>
@@ -171,7 +303,19 @@ The following instruction sets are supported by the library.
 </td>
 <td> <code><b>SIMDPP_ARCH_X86_AVX2</b></code>
 </td>
-<td> 256-bit vectors. Implies AVX
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center; background: #ffff90;" class="table-yes">256
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center; background: #ffff90;" class="table-yes">256
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center; background: #ffff90;" class="table-yes">256
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center; background: #ffff90;" class="table-yes">256
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center; background: #ffff90;" class="table-yes">256
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center; background: #ffff90;" class="table-yes">256
+</td>
+<td> Implies AVX
 </td>
 </tr>
 <tr>
@@ -179,29 +323,137 @@ The following instruction sets are supported by the library.
 </td>
 <td> <code><b>SIMDPP_ARCH_X86_AVX512F</b></code>
 </td>
-<td> 512-bit vectors for floating-point and 32, 64-bit integer types. 8-bit and 16-bit integer vectors have 256-bit length. Implies AVX2
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center; background: #ffff90;" class="table-yes">256
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center; background: #ffff90;" class="table-yes">256
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center; background: #ff9090;" class="table-yes">512
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center; background: #ff9090;" class="table-yes">512
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center; background: #ff9090;" class="table-yes">512
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center; background: #ff9090;" class="table-yes">512
+</td>
+<td> Implies AVX2
 </td>
 </tr>
 <tr>
-<td> ARM NEON without floating-point support
+<td> x86 AVX512BW
+</td>
+<td> <code><b>SIMDPP_ARCH_X86_AVX512BW</b></code>
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center; background: #ff9090;" class="table-yes">512
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center; background: #ff9090;" class="table-yes">512
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center; background: #ff9090;" class="table-yes">512
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center; background: #ff9090;" class="table-yes">512
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center; background: #ff9090;" class="table-yes">512
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center; background: #ff9090;" class="table-yes">512
+</td>
+<td> Implies AVX512F
+</td>
+</tr>
+<tr>
+<td> x86 AVX512DQ
+</td>
+<td> <code><b>SIMDPP_ARCH_X86_AVX512DQ</b></code>
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center; background: #ffff90;" class="table-yes">256
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center; background: #ffff90;" class="table-yes">256
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center; background: #ff9090;" class="table-yes">512
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center; background: #ff9090;" class="table-yes">512
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center; background: #ff9090;" class="table-yes">512
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center; background: #ff9090;" class="table-yes">512
+</td>
+<td> Implies AVX512F
+</td>
+</tr>
+<tr>
+<td> x86 AVX512VL
+</td>
+<td> <code><b>SIMDPP_ARCH_X86_AVX512VL</b></code>
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center; background: #ffff90;" class="table-yes">256
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center; background: #ffff90;" class="table-yes">256
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center; background: #ff9090;" class="table-yes">512
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center; background: #ff9090;" class="table-yes">512
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center; background: #ff9090;" class="table-yes">512
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center; background: #ff9090;" class="table-yes">512
+</td>
+<td> Implies AVX512F
+</td>
+</tr>
+<tr>
+<td> ARM NEON <br>without floating-point support
 </td>
 <td> <code><b>SIMDPP_ARCH_ARM_NEON</b></code>
 </td>
-<td> Does not use SIMD instructions for floating-point computations. The rationale for this mode is that certain NEON implementations have imprecise single-precision floating-point units.
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #ececec; color: grey; vertical-align: middle; text-align: center;" class="table-na"> <small>N/A</small>
+</td>
+<td style="background: #ececec; color: grey; vertical-align: middle; text-align: center;" class="table-na"> <small>N/A</small>
+</td>
+<td> The rationale for this mode is that certain NEON implementations have imprecise single-precision floating-point units. Not all 64-bit integer operations are provided in hardware.
 </td>
 </tr>
 <tr>
-<td> ARM NEON with floating-point support
+<td> ARM NEON <br>with floating-point support
 </td>
 <td> <code><b>SIMDPP_ARCH_ARM_NEON_FLT_SP</b></code>
 </td>
-<td> Uses SIMD instructions for single-precision floating-point computations, non-SIMD instructions for double-precision floating-point computations.
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #ececec; color: grey; vertical-align: middle; text-align: center;" class="table-na"> <small>N/A</small>
+</td>
+<td> Not all 64-bit integer operations are provided in hardware.
 </td>
 </tr>
 <tr>
 <td> ARM NEONv2
 </td>
 <td> <code><b>SIMDPP_ARCH_ARM_NEON_FLT_SP</b></code><br>or <code><b>SIMDPP_ARCH_ARM_NEON</b></code>
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
 </td>
 <td> Automatically enabled when compiling for ARM64. All floating-point computations are done on the NEON unit.
 </td>
@@ -211,7 +463,79 @@ The following instruction sets are supported by the library.
 </td>
 <td> <code><b>SIMDPP_ARCH_POWER_ALTIVEC</b></code>
 </td>
-<td> Does not use SIMD for double-precision and 64-bit integer computations
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #ececec; color: grey; vertical-align: middle; text-align: center;" class="table-na"> <small>N/A</small>
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #ececec; color: grey; vertical-align: middle; text-align: center;" class="table-na"> <small>N/A</small>
+</td>
+<td> (none)
+</td>
+</tr>
+<tr>
+<td> PowerPC 2.06 VSX
+</td>
+<td> <code><b>SIMDPP_ARCH_POWER_VSX_206</b></code>
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #ececec; color: grey; vertical-align: middle; text-align: center;" class="table-na"> <small>N/A</small>
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td> Implies Altivec
+</td>
+</tr>
+<tr>
+<td> PowerPC 2.07 VSX
+</td>
+<td> <code><b>SIMDPP_ARCH_POWER_VSX_207</b></code>
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td> Implies PowerPC 2.07 VSX
+</td>
+</tr>
+<tr>
+<td> MIPS MSA
+</td>
+<td> <code><b>SIMDPP_ARCH_MIPS_MSA</b></code>
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">128
+</td>
+<td> (none)
 </td>
 </tr>
 </table>
@@ -232,9 +556,7 @@ mw.loader.state({"site":"loading","user":"ready","user.groups":"ready"});
 mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest"],null,true);
 }</script>
 <script src="../../mwiki/load.php%3Fdebug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
-<script>if(window.mw){
-mw.config.set({"wgBackendResponseTime":80});
-}</script>
+
 	</body>
 
 </html>

@@ -103,6 +103,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../types.html" title="types"> Types</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../cap.html" title="cap"> Capabilities</a> </td></tr>
 <tr class="t-nv-h1"><td colspan="5"> Operations </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../conv.html" title="conv"> Conversions</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../bitwise.html" title="bitwise"> Bitwise operations</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../fp.html" title="fp"> Floating-point operations</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../int.html" title="int"> Integer operations</a> </td></tr>
@@ -612,19 +613,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </tbody></table>
 <p>Returns the wrapped native SIMD type.
 </p>
-<p>This API has been deprecated because Clang supports native vector extension which interferes with simdpp types and allows wrong code being allowed to be compiled.
-</p>
-<p>The native vector extension defines operators between vector types. SSE types such as <span class="t-c"><span class="mw-geshi cpp source-cpp">__m128</span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp">__m128i</span></span> are implemented on top of this extension, which causes code like this being possible:
-</p>
-<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="cpp source-cpp"><pre class="de1">__m128i a, b<span class="sy4">;</span> a <span class="sy1">=</span> a <span class="sy2">+</span> b<span class="sy4">;</span></pre></div></div>
-<p>Having an implicit conversion operator to vector types allows types such as <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">uint8</span><span class="sy1">&lt;</span><span class="nu0">16</span><span class="sy1">&gt;</span></span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">uint16</span><span class="sy1">&lt;</span><span class="nu0">8</span><span class="sy1">&gt;</span></span></span> to be implicitly converted to <span class="t-c"><span class="mw-geshi cpp source-cpp">__m128i</span></span>. This leads to code like this being accepted on clang.
-</p>
-<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="cpp source-cpp"><pre class="de1"><span class="kw4">uint8</span><span class="sy1">&lt;</span><span class="nu0">16</span><span class="sy1">&gt;</span> a<span class="sy4">;</span>
-<span class="kw4">uint16</span><span class="sy1">&lt;</span><span class="nu0">8</span><span class="sy1">&gt;</span> b<span class="sy4">;</span>
-a <span class="sy1">=</span> a <span class="sy2">+</span> b<span class="sy4">;</span></pre></div></div>
-<p>Here, both <code>a</code> and <code>b</code> are implicitly converted to <span class="t-c"><span class="mw-geshi cpp source-cpp">__m128i</span></span> values and they are added using an operator provided by the clang vector extension. Unexpectedly, the result is <code>paddq</code> instruction (64-bit integer addition).
-</p>
-<p>Because of this, the implicit native vector type conversion operators are deprecated and a <span class="t-c"><span class="mw-geshi cpp source-cpp">native<span class="br0">(</span><span class="br0">)</span></span></span> method is provided as a replacement. This change only affects code that interacts with native intrinsics. Altivec/VSX and MSA are affected only slightly, because intrinsics of those instruction sets never accepted implicit conversions from libsimdpp types.
+<p>The API will not be provided if <span class="t-c"><span class="mw-geshi cpp source-cpp">SIMDPP_DISABLE_DEPRECATED_CONVERSION_OPERATOR_TO_NATIVE_TYPES</span></span> is defined to nonzero value before inclusion. See <a href="../depr/SIMDPP_DISABLE_DEPRECATED_CONVERSION_OPERATOR_TO_NATIVE_TYPES.html" title="depr/SIMDPP DISABLE DEPRECATED CONVERSION OPERATOR TO NATIVE TYPES"> here for more information</a>.
 </p>
 <h3><span class="mw-headline" id="Parameters_6">Parameters</span></h3>
 <p>(none)
@@ -750,9 +739,7 @@ mw.loader.state({"site":"loading","user":"ready","user.groups":"ready"});
 mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest"],null,true);
 }</script>
 <script src="../../mwiki/load.php%3Fdebug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
-<script>if(window.mw){
-mw.config.set({"wgBackendResponseTime":470});
-}</script>
+
 	</body>
 
 </html>
